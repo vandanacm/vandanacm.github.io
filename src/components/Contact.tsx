@@ -9,7 +9,7 @@ const Contact = () => {
           Let's Work Together
         </h2>
         <p className="text-xl text-muted-foreground mb-12">
-          Have a project in mind or want to collaborate? I'd love to hear from you.
+          Interested in ML/AI research, healthcare tech, or full-stack collaboration? Let's connect!
         </p>
         
         <Button 

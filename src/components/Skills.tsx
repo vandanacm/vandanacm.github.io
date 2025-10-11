@@ -4,23 +4,23 @@ import { Code2, Palette, Smartphone, Globe } from "lucide-react";
 const skills = [
   {
     icon: Code2,
-    title: "Frontend Development",
-    description: "React, TypeScript, Tailwind CSS, Next.js",
+    title: "AI/ML Engineering",
+    description: "TensorFlow, Keras, RAG, OpenAI GPT, Computer Vision, Deep Learning",
   },
   {
     icon: Palette,
-    title: "UI/UX Design",
-    description: "Figma, Adobe XD, Design Systems, Prototyping",
+    title: "Full-Stack Development",
+    description: "React, Next.js, Java, Springboot, Python, GraphQL, REST APIs",
   },
   {
     icon: Globe,
-    title: "Full-Stack",
-    description: "Node.js, PostgreSQL, REST APIs, Cloud Services",
+    title: "Cloud & DevOps",
+    description: "AWS EKS, S3, CloudFront, Azure, Docker, Kubernetes, CI/CD",
   },
   {
     icon: Smartphone,
-    title: "Responsive Design",
-    description: "Mobile-First, Progressive Web Apps, Accessibility",
+    title: "Data & Security",
+    description: "SQL, ChromaDB, HIPAA Compliance, Blockchain, IoT Systems",
   },
 ];
 

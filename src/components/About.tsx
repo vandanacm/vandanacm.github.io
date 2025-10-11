@@ -7,19 +7,19 @@ const About = () => {
         </h2>
         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
           <p>
-            I'm a passionate developer and designer with a keen eye for creating beautiful, 
-            functional web experiences. My journey in tech has been driven by curiosity and 
-            a love for solving complex problems with elegant solutions.
+            I'm a graduate student at UC Davis pursuing my Master's in Electrical and Computer Engineering, 
+            specializing in Machine Learning and AI. Previously, I worked as a Full Stack Engineer at Optum, 
+            UnitedHealth Group, where I engineered HIPAA-compliant healthcare solutions serving 50M+ users.
           </p>
           <p>
-            With expertise spanning modern frontend frameworks, UI/UX design, and full-stack 
-            development, I bring ideas to life through clean code and thoughtful design. 
-            I believe that great digital products are born at the intersection of aesthetics 
-            and functionality.
+            My expertise spans across AI/ML (RAG systems, deep learning, computer vision), cloud infrastructure 
+            (AWS, Kubernetes, Docker), and full-stack development (React, Next.js, Java, Python). I've delivered 
+            systems that improved API performance by 30%, reduced deployment time by 60%, and maintained 90% code coverage.
           </p>
           <p>
-            When I'm not coding, you'll find me exploring new design trends, contributing to 
-            open-source projects, or sharing knowledge with the developer community.
+            Beyond engineering, I'm passionate about research—I've published 5 papers on blockchain-healthcare integration, 
+            drowsiness detection, and IoT systems. I've earned 8 Diamond Recognition awards at Optum and won international 
+            Best Paper awards. I thrive on solving complex problems at the intersection of AI, healthcare, and scalable systems.
           </p>
         </div>
       </div>

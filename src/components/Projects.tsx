@@ -7,22 +7,22 @@ import project3 from "@/assets/project-3.jpg";
 
 const projects = [
   {
-    title: "Analytics Dashboard",
-    description: "A comprehensive analytics platform with real-time data visualization and insights",
+    title: "Clinical Intelligent System",
+    description: "RAG-based clinical Q&A system using OpenAI GPT-4o mini with ChromaDB vector database for semantic search, delivering factually accurate medical responses",
     image: project1,
-    tags: ["React", "TypeScript", "Chart.js"],
+    tags: ["OpenAI", "RAG", "ChromaDB", "Python"],
   },
   {
-    title: "E-Commerce Platform",
-    description: "Modern online shopping experience with seamless checkout and inventory management",
+    title: "Medical Chain - EHR System",
+    description: "Blockchain-integrated Electronic Health Record system with UNet lung segmentation (92-95% accuracy), IPFS storage, and Ethereum smart contracts for COVID-19 management",
     image: project2,
-    tags: ["Next.js", "Stripe", "PostgreSQL"],
+    tags: ["Blockchain", "Deep Learning", "IPFS", "React"],
   },
   {
-    title: "Fitness Tracker App",
-    description: "Mobile-first fitness tracking application with goal setting and progress monitoring",
+    title: "Drowsiness Detection System",
+    description: "Real-time CNN-based drowsiness detection deployed on Raspberry Pi with 95% accuracy, using OpenCV and 7000 eye data images for highway driver safety",
     image: project3,
-    tags: ["React Native", "Firebase", "UI/UX"],
+    tags: ["CNN", "OpenCV", "Raspberry Pi", "TensorFlow"],
   },
 ];
 

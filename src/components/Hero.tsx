@@ -22,14 +22,14 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 animate-fade-in">
-          Creative Developer
+          ML/AI Engineer
           <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-            & Designer
+            & Full Stack Developer
           </span>
         </h1>
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-          Crafting beautiful digital experiences with modern web technologies
+          MS in ECE @ UC Davis | Building intelligent healthcare systems with AI and scalable cloud architecture
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
