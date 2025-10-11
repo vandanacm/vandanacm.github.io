@@ -4,6 +4,8 @@ import { ExternalLink, Github } from "lucide-react";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
+import project4 from "@/assets/project-4.jpg";
+import project5 from "@/assets/project-5.jpg";
 
 const projects = [
   {
@@ -11,18 +13,35 @@ const projects = [
     description: "RAG-based clinical Q&A system using OpenAI GPT-4o mini with ChromaDB vector database for semantic search, delivering factually accurate medical responses",
     image: project1,
     tags: ["OpenAI", "RAG", "ChromaDB", "Python"],
+    year: "2025"
+  },
+  {
+    title: "SQLbot - NLP to SQL Converter",
+    description: "Rasa-Core NLP module converting plain English to SQL queries, with rasa-action-server connecting to databases for intelligent query execution",
+    image: project2,
+    tags: ["Rasa", "NLP", "SQL", "Python"],
+    year: "2022"
   },
   {
     title: "Medical Chain - EHR System",
     description: "Blockchain-integrated Electronic Health Record system with UNet lung segmentation (92-95% accuracy), IPFS storage, and Ethereum smart contracts for COVID-19 management",
-    image: project2,
+    image: project3,
     tags: ["Blockchain", "Deep Learning", "IPFS", "React"],
+    year: "2022"
   },
   {
-    title: "Drowsiness Detection System",
+    title: "Highway Drowsiness Detection",
     description: "Real-time CNN-based drowsiness detection deployed on Raspberry Pi with 95% accuracy, using OpenCV and 7000 eye data images for highway driver safety",
-    image: project3,
+    image: project4,
     tags: ["CNN", "OpenCV", "Raspberry Pi", "TensorFlow"],
+    year: "2021"
+  },
+  {
+    title: "Intruder ReID and Tracking",
+    description: "Individual re-identification system for surveillance using ResNet50 and YOLOv3 on Market1501 and COCO datasets, with visual tracking and detection mapping",
+    image: project5,
+    tags: ["ResNet50", "YOLOv3", "Computer Vision", "Python"],
+    year: "2021"
   },
 ];
 
@@ -61,7 +80,10 @@ const Projects = () => {
                 </div>
               </div>
               <CardHeader>
-                <CardTitle className="font-playfair text-card-foreground">{project.title}</CardTitle>
+                <div className="flex items-start justify-between mb-2">
+                  <CardTitle className="font-playfair text-card-foreground">{project.title}</CardTitle>
+                  <span className="text-xs text-muted-foreground font-medium">{project.year}</span>
+                </div>
                 <CardDescription>{project.description}</CardDescription>
               </CardHeader>
               <CardContent>
