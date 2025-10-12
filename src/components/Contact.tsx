@@ -15,10 +15,12 @@ const Contact = () => {
         <Button 
           size="lg"
           className="bg-gradient-hero hover:opacity-90 text-primary-foreground shadow-elegant mb-12"
-          onClick={() => window.location.href = 'mailto:hello@example.com'}
+          asChild
         >
-          <Mail className="w-5 h-5 mr-2" />
-          Get In Touch
+          <a href="mailto:your.email@example.com">
+            <Mail className="w-5 h-5 mr-2" />
+            Get In Touch
+          </a>
         </Button>
 
         <div className="flex justify-center gap-6">
@@ -26,22 +28,31 @@ const Contact = () => {
             variant="outline" 
             size="icon"
             className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            asChild
           >
-            <Github className="w-5 h-5" />
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <Github className="w-5 h-5" />
+            </a>
           </Button>
           <Button 
             variant="outline" 
             size="icon"
             className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            asChild
           >
-            <Linkedin className="w-5 h-5" />
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="w-5 h-5" />
+            </a>
           </Button>
           <Button 
             variant="outline" 
             size="icon"
             className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            asChild
           >
-            <Twitter className="w-5 h-5" />
+            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <Twitter className="w-5 h-5" />
+            </a>
           </Button>
         </div>
       </div>

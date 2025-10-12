@@ -7,7 +7,7 @@ const awards = [
     title: "8x Diamond Recognition",
     organization: "Optum, UnitedHealth Group",
     description: "For Performance, Innovation, Collaboration and Compassion",
-    period: "2022-2025",
+    period: "June 2022 - September 2025",
   },
   {
     icon: Trophy,
