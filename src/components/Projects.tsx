@@ -27,7 +27,8 @@ const projects = [
     description: "Blockchain-integrated Electronic Health Record system with UNet lung segmentation (92-95% accuracy), IPFS storage, and Ethereum smart contracts for COVID-19 management",
     image: project3,
     tags: ["Blockchain", "Deep Learning", "IPFS", "React"],
-    year: "2022"
+    year: "2022",
+    demoUrl: "https://vimeo.com/705705822"
   },
   {
     title: "Highway Drowsiness Detection",
@@ -69,10 +70,14 @@ const Projects = () => {
                   className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-2">
-                  <Button size="sm" variant="secondary" className="shadow-lg">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
-                  </Button>
+                  {project.demoUrl && (
+                    <Button size="sm" variant="secondary" className="shadow-lg" asChild>
+                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Demo
+                      </a>
+                    </Button>
+                  )}
                   <Button size="sm" variant="secondary" className="shadow-lg">
                     <Github className="w-4 h-4 mr-2" />
                     Code
