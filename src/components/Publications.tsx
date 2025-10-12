@@ -8,30 +8,35 @@ const publications = [
     publisher: "Elsevier",
     date: "September 2024",
     type: "Journal Article",
+    url: "https://shop.elsevier.com/books/data-science-in-the-medical-field/kadry/978-0-443-24028-7",
   },
   {
     title: "Highway Drivers Drowsiness Detection System Model with R-Pi and CNN technique",
     publisher: "IEEE Xplore",
     date: "July 2021",
     type: "Conference Paper",
+    url: "https://ieeexplore.ieee.org/document/9579613",
   },
   {
     title: "Deploying Complementary filter to avert gimbal lock in drones using Quaternion angles",
     publisher: "IEEE Xplore",
     date: "October 2020",
     type: "Conference Paper",
+    url: "https://ieeexplore.ieee.org/document/9231126",
   },
   {
     title: "Smart Cane Design for Indoor and Outdoor Navigation: A cost-effective guide",
     publisher: "Springer, Singapore",
     date: "January 2020",
     type: "Book Chapter",
+    url: "https://link.springer.com/chapter/10.1007/978-981-15-0146-3_49",
   },
   {
     title: "Hyperledger Sawtooth Blockchain-IoT e-provenance platform for pharmaceuticals",
     publisher: "IJEAT",
     date: "December 2019",
     type: "Journal Article",
+    url: "https://www.ijeat.org/wp-content/uploads/papers/v9i1s3/A10511291S319.pdf",
   },
 ];
 
@@ -75,9 +80,12 @@ const Publications = () => {
                   size="sm" 
                   variant="outline"
                   className="gap-2 hover:bg-primary hover:text-primary-foreground transition-all"
+                  asChild
                 >
-                  <ExternalLink className="w-4 h-4" />
-                  View Publication
+                  <a href={pub.url} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-4 h-4" />
+                    View Publication
+                  </a>
                 </Button>
               </CardContent>
             </Card>
