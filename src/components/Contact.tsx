@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin, BookOpen } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -17,7 +17,7 @@ const Contact = () => {
           className="bg-gradient-hero hover:opacity-90 text-primary-foreground shadow-elegant mb-12"
           asChild
         >
-          <a href="mailto:your.email@example.com">
+          <a href="mailto:vandanacmansur@gmail.com">
             <Mail className="w-5 h-5 mr-2" />
             Get In Touch
           </a>
@@ -30,7 +30,7 @@ const Contact = () => {
             className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             asChild
           >
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/vandanacm/" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5" />
             </a>
           </Button>
@@ -40,7 +40,7 @@ const Contact = () => {
             className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             asChild
           >
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/vandana-mansur/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-5 h-5" />
             </a>
           </Button>
@@ -50,8 +50,8 @@ const Contact = () => {
             className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             asChild
           >
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <Twitter className="w-5 h-5" />
+            <a href="https://medium.com/@vandanacmansur" target="_blank" rel="noopener noreferrer">
+              <BookOpen className="w-5 h-5" />
             </a>
           </Button>
         </div>
