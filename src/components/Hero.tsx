@@ -22,10 +22,10 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 animate-fade-in">
-          ML/AI Engineer
+          AI/ML Enthusiast
           <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-            & Full Stack Developer
+            & Full Stack Engineer
           </span>
         </h1>
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">

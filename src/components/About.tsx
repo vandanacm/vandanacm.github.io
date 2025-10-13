@@ -7,19 +7,16 @@ const About = () => {
         </h2>
         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
           <p>
-            I'm a graduate student at UC Davis pursuing my Master's in Electrical and Computer Engineering, 
-            specializing in Machine Learning and AI. Previously, I worked as a Full Stack Engineer at Optum, 
-            UnitedHealth Group, where I engineered HIPAA-compliant healthcare solutions serving 50M+ users.
+            I am Vandana, a software engineer with 3+ years of experience in full-stack development, REST APIs, 
+            GraphQL APIs, and cloud infrastructure. Currently, pursuing my Master's in Electrical and Computer 
+            Engineering at UC Davis, with a focus on scalable Intelligent systems. I am passionate about research 
+            in ML and AI, leading to digital health innovation. I enjoy finding smarter ways to make tech accessible, 
+            building scalable systems that are secure and impactful.
           </p>
           <p>
-            My expertise spans across AI/ML (RAG systems, deep learning, computer vision), cloud infrastructure 
-            (AWS, Kubernetes, Docker), and full-stack development (React, Next.js, Java, Python). I've delivered 
-            systems that improved API performance by 30%, reduced deployment time by 60%, and maintained 90% code coverage.
-          </p>
-          <p>
-            Beyond engineering, I'm passionate about research—I've published 5 papers on blockchain-healthcare integration, 
-            drowsiness detection, and IoT systems. I've earned 8 Diamond Recognition awards at Optum and won international 
-            Best Paper awards. I thrive on solving complex problems at the intersection of AI, healthcare, and scalable systems.
+            Outside work and studies, I enjoy tracking my nutrition, hiking, travelling to new cities and capturing 
+            nature. If you are interested in connecting over technology, AI, or digital health innovation, let's 
+            talk—I am always open to new ideas and opportunities.
           </p>
         </div>
       </div>

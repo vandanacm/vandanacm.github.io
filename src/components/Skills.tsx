@@ -5,7 +5,7 @@ const skills = [
   {
     icon: Code2,
     title: "AI/ML Engineering",
-    description: "TensorFlow, Keras, RAG, OpenAI GPT, Computer Vision, Deep Learning",
+    description: "TensorFlow, Keras, RAG, OpenAI GPT, Pytorch, Deep Learning",
   },
   {
     icon: Palette,
@@ -15,12 +15,12 @@ const skills = [
   {
     icon: Globe,
     title: "Cloud & DevOps",
-    description: "AWS EKS, S3, CloudFront, Azure, Docker, Kubernetes, CI/CD",
+    description: "AWS EKS, S3, ASM, CloudFront, Azure, Docker, Kubernetes, Terraform, API Gateway, CI/CD",
   },
   {
     icon: Smartphone,
     title: "Data & Security",
-    description: "SQL, ChromaDB, HIPAA Compliance, Blockchain, IoT Systems",
+    description: "SQL, ChromaDB, Prisma Compute, HIPAA Compliance, Blockchain, IoT Systems",
   },
 ];
 
