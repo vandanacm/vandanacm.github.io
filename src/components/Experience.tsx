@@ -56,7 +56,7 @@ const education = [
     degree: "Bachelor of Technology, Electronics & Communication Engineering",
     gpa: "GPA: 8.85/10",
     period: "2018 - 2022",
-    activities: ["Documentation Head of Curtiss R/C, SAE-VIT", "Chairperson of KLA", "Stalls Coordinator - Ayuda, Riviera 2020", "Sales Team, Riviera 2020", "Undergraduate Researcher"],
+    activities: ["Chairperson of Ayuda NGO", "Technical Team Member of IEEE-MTTS", "IoThinc", "Founding Member & Head of Public Relations, Digit Squad-VIT", "Documentation Head of Curtiss R/C, SAE-VIT", "Chairperson of KLA", "Stalls Coordinator - Ayuda, Riviera 2020", "Sales Team, Riviera 2020", "Undergraduate Researcher"],
   },
 ];
 
