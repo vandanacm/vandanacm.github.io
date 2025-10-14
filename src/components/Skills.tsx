@@ -26,25 +26,30 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
+    <section id="skills" className="py-20 bg-background relative overflow-hidden">
+      {/* Decorative grid background */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Skills & Expertise
         </h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-12" />
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skills.map((skill, index) => (
             <Card 
               key={index}
-              className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border bg-card"
+              className="group hover:shadow-hover transition-all duration-500 hover:-translate-y-3 border-border bg-gradient-card backdrop-blur-sm hover:border-primary/30"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-6 text-center">
-                <div className="mb-4 inline-flex p-4 bg-gradient-hero rounded-full">
+                <div className="mb-4 inline-flex p-4 bg-gradient-hero rounded-full shadow-tech-glow group-hover:scale-110 transition-transform duration-500">
                   <skill.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="font-playfair text-xl font-bold mb-2 text-card-foreground">
+                <h3 className="font-playfair text-xl font-bold mb-3 text-card-foreground group-hover:text-primary transition-colors duration-300">
                   {skill.title}
                 </h3>
-                <p className="text-muted-foreground">{skill.description}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{skill.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -21,29 +21,34 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 animate-fade-in">
-          AI/ML Enthusiast
-          <br />
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-            & Full Stack Engineer
-          </span>
-        </h1>
-        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+        <div className="animate-fade-in">
+          <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6">
+            <span className="inline-block hover:scale-105 transition-transform duration-300">
+              AI/ML Enthusiast
+            </span>
+            <br />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-white/95 to-white/80 inline-block hover:scale-105 transition-transform duration-300">
+              & Full Stack Engineer
+            </span>
+          </h1>
+        </div>
+        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto animate-slide-up font-light">
           MS in ECE @ UC Davis | Building intelligent healthcare systems with AI and scalable cloud architecture
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Button 
             size="lg" 
             onClick={scrollToProjects}
-            className="bg-white/10 text-white border-2 border-white/20 hover:bg-white hover:text-primary backdrop-blur-sm transition-all duration-300 shadow-elegant"
+            className="bg-white/10 text-white border-2 border-white/20 hover:bg-white hover:text-primary backdrop-blur-sm transition-all duration-300 shadow-elegant hover:shadow-hover hover:scale-105 group"
           >
             View My Work
+            <ArrowDown className="ml-2 w-4 h-4 group-hover:translate-y-1 transition-transform" />
           </Button>
           <Button 
             size="lg" 
             variant="outline"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-white text-primary hover:bg-white/90 border-0 shadow-elegant"
+            className="bg-white text-primary hover:bg-white/90 border-0 shadow-elegant hover:shadow-hover hover:scale-105 transition-all duration-300"
           >
             Get In Touch
           </Button>

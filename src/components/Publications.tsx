@@ -42,12 +42,17 @@ const publications = [
 
 const Publications = () => {
   return (
-    <section id="publications" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4">
+    <section id="publications" className="py-20 bg-gradient-subtle relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-1/2 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Publications & Research
         </h2>
-        <p className="text-center text-muted-foreground mb-12 text-lg">
+        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
+        <p className="text-center text-foreground/70 mb-12 text-lg">
           Contributing to academic research in AI, blockchain, and healthcare
         </p>
 
@@ -55,15 +60,16 @@ const Publications = () => {
           {publications.map((pub, index) => (
             <Card 
               key={index}
-              className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 border-border bg-card"
+              className="group hover:shadow-hover transition-all duration-500 hover:-translate-y-2 border-border bg-gradient-card backdrop-blur-sm hover:border-primary/20"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
                 <div className="flex items-start gap-3">
-                  <div className="mt-1 p-2 bg-gradient-hero rounded-lg">
+                  <div className="mt-1 p-2 bg-gradient-hero rounded-lg shadow-tech-glow group-hover:scale-110 transition-transform duration-500">
                     <FileText className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div className="flex-1">
-                    <CardTitle className="font-playfair text-lg text-card-foreground mb-2 group-hover:text-primary transition-colors">
+                    <CardTitle className="font-playfair text-lg text-card-foreground mb-2 group-hover:text-primary transition-colors duration-300">
                       {pub.title}
                     </CardTitle>
                     <CardDescription>
@@ -79,7 +85,7 @@ const Publications = () => {
                 <Button 
                   size="sm" 
                   variant="outline"
-                  className="gap-2 hover:bg-primary hover:text-primary-foreground transition-all"
+                  className="gap-2 hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300 border-primary/20"
                   asChild
                 >
                   <a href={pub.url} target="_blank" rel="noopener noreferrer">

@@ -1,11 +1,16 @@
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-8 text-center">
+    <section id="about" className="py-20 bg-gradient-subtle relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-10 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 max-w-4xl relative z-10">
+        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           About Me
         </h2>
-        <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-12" />
+        <div className="space-y-6 text-lg text-foreground/80 leading-relaxed bg-card/30 backdrop-blur-sm p-8 rounded-lg border border-border/50 shadow-card">
           <p>
             I am Vandana, a software engineer with 3+ years of experience in full-stack development, REST APIs, 
             GraphQL APIs, and cloud infrastructure. Currently, pursuing my Master's in Electrical and Computer 

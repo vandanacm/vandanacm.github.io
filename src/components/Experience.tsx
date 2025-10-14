@@ -62,12 +62,17 @@ const education = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="experience" className="py-20 bg-background relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Experience & Education
         </h2>
-        <p className="text-center text-muted-foreground mb-12 text-lg">
+        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
+        <p className="text-center text-foreground/70 mb-12 text-lg">
           Building intelligent healthcare systems at scale
         </p>
 
@@ -82,15 +87,16 @@ const Experience = () => {
               {experiences.map((exp, index) => (
                 <Card 
                   key={index}
-                  className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border bg-card"
+                  className="group hover:shadow-hover transition-all duration-500 hover:-translate-y-2 border-border bg-gradient-card backdrop-blur-sm hover:border-primary/20"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
                       <div>
-                        <CardTitle className="font-playfair text-card-foreground">{exp.role}</CardTitle>
+                        <CardTitle className="font-playfair text-card-foreground group-hover:text-primary transition-colors duration-300">{exp.role}</CardTitle>
                         <CardDescription className="text-base font-medium mt-1">{exp.company}</CardDescription>
                       </div>
-                      <Badge variant="secondary" className="w-fit">{exp.period}</Badge>
+                      <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{exp.period}</Badge>
                     </div>
                     <p className="text-sm text-muted-foreground">{exp.location}</p>
                   </CardHeader>
@@ -119,17 +125,18 @@ const Experience = () => {
               {education.map((edu, index) => (
                 <Card 
                   key={index}
-                  className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border bg-card"
+                  className="group hover:shadow-hover transition-all duration-500 hover:-translate-y-2 border-border bg-gradient-card backdrop-blur-sm hover:border-primary/20"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
                       <div>
-                        <CardTitle className="font-playfair text-card-foreground">{edu.school}</CardTitle>
+                        <CardTitle className="font-playfair text-card-foreground group-hover:text-primary transition-colors duration-300">{edu.school}</CardTitle>
                         <CardDescription className="text-base font-medium mt-1">
                           {edu.degree} {edu.gpa && <span className="text-primary">• {edu.gpa}</span>}
                         </CardDescription>
                       </div>
-                      <Badge variant="secondary" className="w-fit">{edu.period}</Badge>
+                      <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{edu.period}</Badge>
                     </div>
                     <p className="text-sm text-muted-foreground">{edu.location}</p>
                   </CardHeader>
@@ -139,7 +146,7 @@ const Experience = () => {
                         {edu.activities.map((activity, i) => (
                           <span 
                             key={i}
-                            className="px-3 py-1 text-xs bg-secondary text-secondary-foreground rounded-full"
+                            className="px-3 py-1 text-xs bg-primary/5 text-primary border border-primary/20 rounded-full hover:bg-primary/10 transition-colors duration-300"
                           >
                             {activity}
                           </span>
