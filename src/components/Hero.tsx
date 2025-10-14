@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -21,6 +22,14 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
+        {/* Profile Picture */}
+        <div className="flex justify-center mb-8 animate-slide-up">
+          <Avatar className="w-40 h-40 border-4 border-white/30 shadow-elegant">
+            <AvatarImage src="/placeholder.svg" alt="Vandana" />
+            <AvatarFallback className="text-4xl font-bold bg-white/20 text-white">V</AvatarFallback>
+          </Avatar>
+        </div>
+        
         <div className="animate-fade-in">
           <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6">
             <span className="inline-block hover:scale-105 transition-transform duration-300">
