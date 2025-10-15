@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
         
         <div className="animate-fade-in">
-          <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6">
+          <h1 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6">
             <span className="inline-block hover:scale-105 transition-transform duration-300">
               AI/ML Enthusiast
             </span>
