@@ -50,7 +50,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
+        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Featured Projects
         </h2>
         <p className="text-center text-muted-foreground mb-12 text-lg">
@@ -87,7 +87,7 @@ const Projects = () => {
               </div>
               <CardHeader>
                 <div className="flex items-start justify-between mb-2">
-                  <CardTitle className="font-playfair text-card-foreground group-hover:text-primary transition-colors duration-300">{project.title}</CardTitle>
+                  <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{project.title}</CardTitle>
                   <span className="text-xs text-muted-foreground font-medium px-2 py-1 bg-secondary/50 rounded-md">{project.year}</span>
                 </div>
                 <CardDescription className="text-sm leading-relaxed">{project.description}</CardDescription>

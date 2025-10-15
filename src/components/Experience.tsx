@@ -68,7 +68,7 @@ const Experience = () => {
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
+        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Experience & Education
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
@@ -81,7 +81,7 @@ const Experience = () => {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <Briefcase className="w-6 h-6 text-primary" />
-              <h3 className="font-playfair text-2xl font-bold text-foreground">Work Experience</h3>
+              <h3 className="font-sans text-2xl font-bold text-foreground">Work Experience</h3>
             </div>
             <div className="space-y-6">
               {experiences.map((exp, index) => (
@@ -93,7 +93,7 @@ const Experience = () => {
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
                       <div>
-                        <CardTitle className="font-playfair text-card-foreground group-hover:text-primary transition-colors duration-300">{exp.role}</CardTitle>
+                        <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{exp.role}</CardTitle>
                         <CardDescription className="text-base font-medium mt-1">{exp.company}</CardDescription>
                       </div>
                       <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{exp.period}</Badge>
@@ -119,7 +119,7 @@ const Experience = () => {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <GraduationCap className="w-6 h-6 text-primary" />
-              <h3 className="font-playfair text-2xl font-bold text-foreground">Education</h3>
+              <h3 className="font-sans text-2xl font-bold text-foreground">Education</h3>
             </div>
             <div className="space-y-6">
               {education.map((edu, index) => (
@@ -131,7 +131,7 @@ const Experience = () => {
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
                       <div>
-                        <CardTitle className="font-playfair text-card-foreground group-hover:text-primary transition-colors duration-300">{edu.school}</CardTitle>
+                        <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{edu.school}</CardTitle>
                         <CardDescription className="text-base font-medium mt-1">
                           {edu.degree} {edu.gpa && <span className="text-primary">• {edu.gpa}</span>}
                         </CardDescription>

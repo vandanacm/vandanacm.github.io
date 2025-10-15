@@ -31,7 +31,7 @@ const Skills = () => {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
+        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Skills & Expertise
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-12" />
@@ -46,7 +46,7 @@ const Skills = () => {
                 <div className="mb-4 inline-flex p-4 bg-gradient-hero rounded-full shadow-tech-glow group-hover:scale-110 transition-transform duration-500">
                   <skill.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="font-playfair text-xl font-bold mb-3 text-card-foreground group-hover:text-primary transition-colors duration-300">
+                <h3 className="font-sans text-xl font-bold mb-3 text-card-foreground group-hover:text-primary transition-colors duration-300">
                   {skill.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{skill.description}</p>

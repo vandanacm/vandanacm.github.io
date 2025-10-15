@@ -66,7 +66,7 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <h1 className="font-playfair text-2xl font-bold text-foreground">
+          <h1 className="font-sans text-2xl font-bold text-foreground">
             Portfolio
           </h1>
 

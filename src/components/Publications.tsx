@@ -48,7 +48,7 @@ const Publications = () => {
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
+        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Publications & Research
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
@@ -69,7 +69,7 @@ const Publications = () => {
                     <FileText className="w-5 h-5 text-primary-foreground" />
                   </div>
                   <div className="flex-1">
-                    <CardTitle className="font-playfair text-lg text-card-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                    <CardTitle className="font-sans text-lg text-card-foreground mb-2 group-hover:text-primary transition-colors duration-300">
                       {pub.title}
                     </CardTitle>
                     <CardDescription>
