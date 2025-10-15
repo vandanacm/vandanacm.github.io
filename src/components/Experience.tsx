@@ -73,7 +73,7 @@ const Experience = () => {
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
         <p className="text-center text-foreground/70 mb-12 text-lg">
-          Building intelligent healthcare systems at scale
+          Building intelligent systems with AI and scalable cloud architecture
         </p>
 
         <div className="space-y-12 max-w-5xl mx-auto">
