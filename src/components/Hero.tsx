@@ -26,7 +26,7 @@ const Hero = () => {
               AI/ML Enthusiast
             </span>
             <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary inline-block hover:scale-105 transition-transform duration-300">
+            <span className="text-primary inline-block hover:scale-105 transition-transform duration-300">
               & Full Stack Engineer
             </span>
           </h1>
