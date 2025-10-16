@@ -19,8 +19,7 @@ const About = () => {
             building scalable systems that are secure and impactful.
           </p>
           <p>
-            Outside work and studies, I enjoy tracking my nutrition, hiking, travelling to new cities and capturing 
-            nature. If you are interested in connecting over technology, AI, or digital health innovation, let's 
+            Outside of work and studies, I enjoy tracking my nutrition, gardening, travelling to new places, volunteering, and capturing nature. If you are interested in connecting over technology, AI, and critical healthcare innovation, let's 
             talk—I am always open to new ideas and opportunities.
           </p>
         </div>
