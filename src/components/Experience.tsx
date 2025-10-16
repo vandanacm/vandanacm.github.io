@@ -44,6 +44,7 @@ const education = [
     location: "Davis, California",
     degree: "Master of Science, Electrical and Computer Engineering (ML Track)",
     period: "2025 - Present",
+    coursework: ["Big Data & High Performance Statistical Computing", "Modeling & Optimization in Computer Engineering"],
     activities: ["Club of Female Electrical Engineers", "IEEE", "Graduate Student Association"],
   },
   {
@@ -133,8 +134,21 @@ const Experience = () => {
                     </div>
                     <p className="text-sm text-muted-foreground">{edu.location}</p>
                   </CardHeader>
-                  {edu.activities && (
-                    <CardContent>
+                  <CardContent>
+                    {edu.coursework && (
+                      <div className="mb-4">
+                        <h4 className="text-sm font-semibold text-foreground mb-2">Relevant Coursework:</h4>
+                        <ul className="space-y-1">
+                          {edu.coursework.map((course, i) => (
+                            <li key={i} className="flex gap-2 text-sm text-muted-foreground">
+                              <span className="text-primary">•</span>
+                              <span>{course}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {edu.activities && (
                       <div className="flex flex-wrap gap-2">
                         {edu.activities.map((activity, i) => (
                           <span 
@@ -145,8 +159,8 @@ const Experience = () => {
                           </span>
                         ))}
                       </div>
-                    </CardContent>
-                  )}
+                    )}
+                  </CardContent>
                 </Card>
               ))}
             </div>
