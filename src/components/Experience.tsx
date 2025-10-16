@@ -22,8 +22,8 @@ const experiences = [
     type: "work",
     company: "Optum, UnitedHealth Group",
     location: "Hyderabad, India",
-    role: "Software Engineer",
-    period: "June 2024 – September 2024",
+    role: "Software Engineer - Building intelligent systems with AI and scalable cloud architecture",
+    period: "June 2022 – September 2024",
     achievements: [
       "Developed secure REST APIs in Java and Springboot with HIPAA compliance for healthcare data exchange, boosting API performance by 20%",
       "Integrated CareMemo with EMR systems, including Pathway, using bi-directional API communication",
@@ -71,10 +71,7 @@ const Experience = () => {
         <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Experience & Education
         </h2>
-        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
-        <p className="text-center text-foreground/70 mb-12 text-lg">
-          Building intelligent systems with AI and scalable cloud architecture
-        </p>
+        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-12" />
 
         <div className="space-y-12 max-w-5xl mx-auto">
           {/* Work Experience */}
