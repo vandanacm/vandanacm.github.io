@@ -31,8 +31,11 @@ const Hero = () => {
             </span>
           </h1>
         </div>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-slide-up font-light">
+        <p className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl mx-auto animate-slide-up font-light">
           MS in ECE @ UC Davis
+        </p>
+        <p className="text-lg md:text-xl text-muted-foreground/80 mb-8 max-w-2xl mx-auto animate-slide-up font-light">
+          Building intelligent systems with AI and scalable cloud architecture
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Button 

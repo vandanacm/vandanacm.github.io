@@ -22,7 +22,7 @@ const experiences = [
     type: "work",
     company: "Optum, UnitedHealth Group",
     location: "Hyderabad, India",
-    role: "Software Engineer - Building intelligent systems with AI and scalable cloud architecture",
+    role: "Software Engineer",
     period: "June 2022 – September 2024",
     achievements: [
       "Developed secure REST APIs in Java and Springboot with HIPAA compliance for healthcare data exchange, boosting API performance by 20%",
