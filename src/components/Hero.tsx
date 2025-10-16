@@ -14,8 +14,8 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center py-20">
         {/* Profile Picture */}
         <div className="flex justify-center mb-8 animate-slide-up">
-          <Avatar className="w-64 h-64 border-4 border-primary/20 shadow-elegant">
-            <AvatarImage src={profilePic} alt="Vandana" />
+          <Avatar className="w-64 h-64 border-4 border-primary/30 shadow-elegant bg-muted/30 backdrop-blur-sm">
+            <AvatarImage src={profilePic} alt="Vandana" className="mix-blend-normal" />
             <AvatarFallback className="text-4xl font-bold bg-primary/10 text-primary">V</AvatarFallback>
           </Avatar>
         </div>
