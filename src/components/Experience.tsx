@@ -13,9 +13,9 @@ const experiences = [
       "Engineered HIPAA-compliant GraphQL APIs for healthcare data exchange, elevating API performance by 30% with reactive Java",
       "Developed and maintained modern, scalable web interfaces (React, Next.js) for member portals serving 50M+ users across four business lines",
       "Optimized member coverage and benefits journeys to enhance user engagement, informed decision-making, and accessibility",
-      "Independently managed a legacy Java service for Medicare and Retirement group members, resolving critical production issues and ensuring uninterrupted system reliability",
+      "Re-engineered legacy SOAP API architecture to modern GraphQL APIs, elevating API performance by 30%, streamlined data access, and enhanced scalability for core applications",
       "Developed GraphQL APIs for the UHC Store e-commerce platform and architected API Gateway solutions. Designed Docker images and deployed on-premises instances for Kubernetes-based application deployment",
-      "Automated deployment pipelines and managed AWS EKS, S3, and CloudFront configurations to ensure robust, high-availability releases",
+      "Automated deployment pipelines and led seamless migration from on-premises to AWS (EKS, ASM, S3, CloudFront), ensuring robust, high-availability releases and improved scalability",
     ],
   },
   {
