@@ -23,7 +23,7 @@ const experiences = [
     role: "Software Engineer",
     period: "June 2022 – September 2024",
     achievements: [
-      "Developed secure REST APIs in Java and Springboot with HIPAA compliance for healthcare data exchange, boosting API performance by 20%",
+      "Delivered secure REST APIs in Java and Springboot with HIPAA compliance, boosting API performance by cutting database call latency by 20% for clinical workflows",
       "Integrated CareMemo with EMR systems via bi-directional APIs, automating onboarding, After Visit Summary and message notifications, while streamlining clinician workflows and scaling platform expansion across multiple Senior Community Care markets",
       "Architected DevOps Infrastructure for new applications, implementing automated CI/CD pipelines that reduced build cycles by 60% across 35 projects and QA process turnaround time by 70%, while improving code quality coverage to 90%. Enabled zero downtime and high availability, managed API gateway, created unified dashboards to monitor performance, achieved 100% vulnerability resolution, and saved 30% on cloud operations costs",
       "Qualified as a top 10 finalist in Home & Community Hackathon 2024",
