@@ -25,10 +25,7 @@ const experiences = [
     period: "June 2022 – September 2024",
     achievements: [
       "Developed secure REST APIs in Java and Springboot with HIPAA compliance for healthcare data exchange, boosting API performance by 20%",
-      "Integrated CareMemo with EMR systems, including Pathway, using bi-directional API communication",
-      "Streamlined onboarding through Pathway Invite Enhancements, removing clinician login dependencies",
-      "Automated After Visit Summary (AVS) notifications for all visit types with email alerts and direct CareMemo links",
-      "Supported CareMemo expansion across multiple markets, including Arizona, Wisconsin, Ohio, Missouri, and Pennsylvania-Delaware",
+      "Integrated CareMemo with EMR systems via bi-directional APIs, automating onboarding, After Visit Summary and message notifications, while streamlining clinician workflows and scaling platform expansion across multiple Senior Community Care markets",
       "Reduced QA process turnaround time by 70% and improved code quality coverage to 90%",
       "Architected DevOps Infrastructure for new applications, implementing automated CI/CD pipelines that reduced build cycles by 60% across 35 projects, enabled zero downtime and high availability, managed API gateway, created unified dashboards to monitor performance, achieved 100% vulnerability resolution, and saved 30% on cloud operations costs",
       "Qualified as a top 10 finalist in Home & Community Hackathon 2024",
