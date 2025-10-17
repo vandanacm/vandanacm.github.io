@@ -10,10 +10,9 @@ const experiences = [
     role: "Full Stack Engineer",
     period: "September 2024 – September 2025",
     achievements: [
-      "Engineered HIPAA-compliant GraphQL APIs for healthcare data exchange, elevating API performance by 30% with reactive Java",
       "Developed and maintained modern, scalable web interfaces (React, Next.js) for member portals serving 50M+ users across four business lines",
       "Optimized member coverage and benefits journeys to enhance user engagement, informed decision-making, and accessibility",
-      "Re-engineered legacy SOAP API architecture to modern GraphQL APIs, elevating API performance by 30%, streamlined data access, and enhanced scalability for core applications",
+      "Redesigned legacy SOAP API architecture at the protocol and data modeling level by implementing modern GraphQL endpoints. Refactored request/response handling, optimized payload serialization, and reduced network overhead, resulting in a 30% improvement in API performance. Enhanced data access efficiency by enabling precise, client-driven queries and improved scalability through modular resolver design and effective resource management for core applications",
       "Developed GraphQL APIs for the UHC Store e-commerce platform and architected API Gateway solutions. Designed Docker images and deployed on-premises instances for Kubernetes-based application deployment",
       "Automated deployment pipelines and led seamless migration from on-premises to AWS (EKS, ASM, S3, CloudFront), ensuring robust, high-availability releases and improved scalability",
     ],
