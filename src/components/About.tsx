@@ -1,4 +1,9 @@
+import { Button } from "@/components/ui/button";
+import { Download, MapPin } from "lucide-react";
+
 const About = () => {
+  const resumeUrl = "/resume.pdf";
+
   return (
     <section id="about" className="py-20 bg-gradient-subtle relative overflow-hidden">
       {/* Decorative elements */}
@@ -9,7 +14,19 @@ const About = () => {
         <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           About Me
         </h2>
-        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-12" />
+        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-8" />
+        
+        {/* Location Info */}
+        <div className="flex flex-wrap justify-center gap-6 mb-12">
+          <div className="flex items-center gap-2 text-foreground/70">
+            <MapPin className="w-5 h-5 text-primary" />
+            <span className="text-sm font-medium">From: <span className="text-foreground">Bangalore, India</span></span>
+          </div>
+          <div className="flex items-center gap-2 text-foreground/70">
+            <MapPin className="w-5 h-5 text-primary" />
+            <span className="text-sm font-medium">Current: <span className="text-foreground">Davis, California</span></span>
+          </div>
+        </div>
         <div className="space-y-6 text-lg text-foreground/80 leading-relaxed bg-card/30 backdrop-blur-sm p-8 rounded-lg border border-border/50 shadow-card">
           <p>
             I am Vandana, a software engineer with 3+ years of experience in full-stack development, REST APIs, 
@@ -22,6 +39,20 @@ const About = () => {
             Outside of work and studies, I enjoy tracking my nutrition, gardening, travelling to new places, volunteering, and capturing nature. If you are interested in connecting over technology, AI, and critical healthcare innovation, let's 
             talk—I am always open to new ideas and opportunities.
           </p>
+          
+          {/* Resume Download Button */}
+          <div className="flex justify-center mt-8">
+            <Button 
+              asChild
+              size="lg"
+              className="bg-gradient-hero hover:opacity-90 transition-opacity shadow-tech-glow"
+            >
+              <a href={resumeUrl} download="resume.pdf">
+                <Download className="w-5 h-5 mr-2" />
+                Download Resume
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
