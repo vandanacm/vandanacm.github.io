@@ -17,11 +17,25 @@ const awards = [
     period: "February 2023",
   },
   {
+    icon: Medal,
+    title: "Second Place - YESIST'12 2022",
+    organization: "IEEE NKSS",
+    description: "Innovation Challenge Track for Medical Chain: Deep Learning and Ethereum Blockchain Integrated Secure Electronic Health Record",
+    period: "May 2022",
+  },
+  {
     icon: Star,
     title: "Chancellor's Achiever Award",
     organization: "VIT",
     description: "First place in Technical Presentation at Aero SAE",
     period: "August 2021",
+  },
+  {
+    icon: Trophy,
+    title: "Top 20 Teams - Flipkart Grid 2.0",
+    organization: "Flipkart Engineering Campus Challenge",
+    description: "Team the_crack_coders secured position among Top 20 teams in India",
+    period: "June 2020",
   },
   {
     icon: Medal,
