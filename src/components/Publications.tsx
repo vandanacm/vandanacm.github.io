@@ -38,6 +38,12 @@ const publications = [
     type: "Journal Article",
     url: "https://www.ijeat.org/wp-content/uploads/papers/v9i1s3/A10511291S319.pdf",
   },
+  {
+    title: "Sensor selection for Indoor Navigation in IOT applications",
+    publisher: "ICCEECCT 2018",
+    date: "December 14, 2018",
+    type: "Conference Paper",
+  },
 ];
 
 const Publications = () => {
@@ -82,17 +88,19 @@ const Publications = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <Button 
-                  size="sm" 
-                  variant="outline"
-                  className="gap-2 hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300 border-primary/20"
-                  asChild
-                >
-                  <a href={pub.url} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4" />
-                    View Publication
-                  </a>
-                </Button>
+                {pub.url && (
+                  <Button 
+                    size="sm" 
+                    variant="outline"
+                    className="gap-2 hover:bg-primary hover:text-primary-foreground hover:scale-105 transition-all duration-300 border-primary/20"
+                    asChild
+                  >
+                    <a href={pub.url} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4" />
+                      View Publication
+                    </a>
+                  </Button>
+                )}
               </CardContent>
             </Card>
           ))}
