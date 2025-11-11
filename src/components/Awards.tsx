@@ -34,7 +34,7 @@ const awards = [
     icon: Trophy,
     title: "Top 20 Teams - Flipkart Grid 2.0",
     organization: "Flipkart Engineering Campus Challenge",
-    description: "Team the_crack_coders secured position among Top 20 teams in India",
+    description: "Team the_crack_coders secured a position among the Top 20 teams of the Engineering Campus Challenge",
     period: "June 2020",
   },
   {
