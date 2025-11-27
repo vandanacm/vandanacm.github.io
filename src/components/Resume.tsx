@@ -49,14 +49,6 @@ const Resume = () => {
               </Button>
             </CardContent>
           </Card>
-
-          <div className="mt-8 p-6 bg-muted/50 rounded-lg border border-border">
-            <p className="text-sm text-muted-foreground text-center">
-              <strong className="text-foreground">Note:</strong> To add your resume, place a file named{" "}
-              <code className="px-2 py-1 bg-background rounded text-primary">resume.pdf</code> in the{" "}
-              <code className="px-2 py-1 bg-background rounded text-primary">public</code> folder of your project.
-            </p>
-          </div>
         </div>
       </div>
     </section>
