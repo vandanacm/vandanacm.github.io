@@ -3,6 +3,13 @@ import { Award, Trophy, Star, Medal } from "lucide-react";
 
 const awards = [
   {
+    icon: Trophy,
+    title: "Top 10 Finale Innovators",
+    organization: "Home & Community Hackathon",
+    description: "Qualified as a top 10 finalist innovator in the Home & Community Hackathon",
+    period: "October 2024",
+  },
+  {
     icon: Award,
     title: "8x Diamond Recognition",
     organization: "Optum, UnitedHealth Group",
