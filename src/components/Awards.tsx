@@ -5,7 +5,7 @@ const awards = [
   {
     icon: Trophy,
     title: "Top 10 Finale Innovators",
-    organization: "Optum, UnitedHealth Group - Home & Community Hackathon",
+    organization: "Optum, UnitedHealth Group",
     description: "Qualified as a top 10 finalist innovator in the Home & Community Hackathon",
     period: "October 2024",
   },
