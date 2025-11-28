@@ -12,7 +12,7 @@ const leadershipRoles = [
   },
   {
     title: "Undergraduate Research Assistant",
-    organization: "Vellore Institute of Technology",
+    organization: "SENSE School, VIT",
     period: "2019-2022",
     description: "Collaboration under the guidance of Professor R. Sujatha in the areas of Blockchain, Internet of Things, Deep Learning, Image processing, and Healthcare Systems",
     type: "Leadership"
@@ -65,12 +65,12 @@ const volunteerActivities = [
   {
     title: "Community Volunteer",
     organization: "Optum",
-    period: "2025",
+    period: "2022-2025",
     description: "Volunteered with G.I.V.E and UCARE-Hyderabad events, organized events for school children, fostered educational opportunities and community engagement",
     type: "Volunteer"
   },
   {
-    title: "Member",
+    title: "Graduate Student Member",
     organization: "Club of Female Electrical Engineers, UC Davis",
     period: "2025",
     description: "Active member contributing to diversity and inclusion in electrical engineering",
