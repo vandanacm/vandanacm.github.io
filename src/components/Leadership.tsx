@@ -7,7 +7,14 @@ const leadershipRoles = [
     title: "Chairperson",
     organization: "Ayuda NGO, VIT",
     period: "2020-2021",
-    description: "Organized Social Entrepreneurship Event at Riviera 2020 and facilitated educational outreach programs",
+    description: "Organized Social Entrepreneurship Event at Riviera 2020 and facilitated educational outreach programs. 'Smile and Spread Smiles' captures my passion for making a positive contribution to society. My experience at 'Ayuda' has convinced me that even the smallest acts of kindness combined with individual efforts can significantly impact anyone in need.",
+    type: "Leadership"
+  },
+  {
+    title: "Undergraduate Research Assistant",
+    organization: "Vellore Institute of Technology",
+    period: "2019-2022",
+    description: "Collaboration under the guidance of Professor R. Sujatha in the areas of Blockchain, Internet of Things, Deep Learning, Image processing, and Healthcare Systems",
     type: "Leadership"
   },
   {
@@ -58,8 +65,29 @@ const volunteerActivities = [
   {
     title: "Community Volunteer",
     organization: "Optum",
-    period: "2022-Present",
+    period: "2025",
     description: "Volunteered with G.I.V.E and UCARE-Hyderabad events, organized events for school children, fostered educational opportunities and community engagement",
+    type: "Volunteer"
+  },
+  {
+    title: "Member",
+    organization: "Club of Female Electrical Engineers, UC Davis",
+    period: "2025",
+    description: "Active member contributing to diversity and inclusion in electrical engineering",
+    type: "Volunteer"
+  },
+  {
+    title: "Graduate Student Member",
+    organization: "IEEE, UC Davis",
+    period: "2025",
+    description: "Active member contributing to science and technology initiatives",
+    type: "Volunteer"
+  },
+  {
+    title: "Member",
+    organization: "Graduate Student Association, UC Davis",
+    period: "2025",
+    description: "Engaged in graduate student community and advocacy",
     type: "Volunteer"
   },
   {
