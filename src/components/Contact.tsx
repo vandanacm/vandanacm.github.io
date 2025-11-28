@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin, BookOpen } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -55,7 +55,7 @@ const Contact = () => {
             asChild
           >
             <a href="https://medium.com/@vandanacmansur" target="_blank" rel="noopener noreferrer" aria-label="Medium">
-              <BookOpen className="w-5 h-5" />
+              <span className="text-lg font-bold">M</span>
             </a>
           </Button>
         </div>
