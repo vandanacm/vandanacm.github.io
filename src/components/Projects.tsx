@@ -31,18 +31,81 @@ const projects = [
     demoUrl: "https://vimeo.com/705705822"
   },
   {
+    title: "Smart City Waste Monitoring System",
+    description: "Hardware prototype integrated with load cell and HX711 module with Arduino and NodeMCU. Integrated with ThingSpeak for analytics and data collection of waste type and weight to maintain a balance credit system for individuals",
+    image: project4,
+    tags: ["Arduino", "NodeMCU", "IoT", "ThingSpeak"],
+    year: "2021"
+  },
+  {
+    title: "Automatic Colorization Using Auto-Encoders",
+    description: "Designed an Autoencoder model for the conversion of black and white images to colored images without human intervention. Feed-forward pass to CNN implemented using Cifar10 dataset",
+    image: project5,
+    tags: ["AutoEncoder", "CNN", "Deep Learning", "Python"],
+    year: "2021"
+  },
+  {
     title: "Highway Drowsiness Detection",
     description: "Real-time CNN-based drowsiness detection deployed on Raspberry Pi with 95% accuracy, using OpenCV and 7000 eye data images for highway driver safety",
-    image: project4,
+    image: project1,
     tags: ["CNN", "OpenCV", "Raspberry Pi", "TensorFlow"],
     year: "2021"
   },
   {
+    title: "ARTEASY - A Store With Purpose",
+    description: "Arteasy believes in handmade products supporting collaborative and sustainable design. Breaching the gap between online market and crafts of artisans from indigenous communities to help reach financial independence",
+    image: project2,
+    tags: ["E-commerce", "Social Impact", "Web Development"],
+    year: "2020"
+  },
+  {
     title: "Intruder ReID and Tracking",
-    description: "Individual re-identification system for surveillance using ResNet50 and YOLOv3 on Market1501 and COCO datasets, with visual tracking and detection mapping",
-    image: project5,
+    description: "Re-identifying persons and plotting detection locations for surveillance application using Market1501 and COCO datasets. Implemented with ResNet50 and YOLOv3 algorithms",
+    image: project3,
     tags: ["ResNet50", "YOLOv3", "Computer Vision", "Python"],
-    year: "2021"
+    year: "2020"
+  },
+  {
+    title: "Smart Breath Monitor at Home",
+    description: "Designed hardware using MAX30100 sensor and ESP8266 controller. IBM cloud for data collection. ML model using Regression to analyze and predict pulse rate and SpO2 for normal and Covid/respiratory disorder patients",
+    image: project4,
+    tags: ["IoT", "ML", "ESP8266", "IBM Cloud"],
+    year: "2020"
+  },
+  {
+    title: "Complementary Filter for Drone Gimbal Lock",
+    description: "Designed a complementary filter to avoid gimbal lock in drones by converting Euler angles of raw, pitch, yaw axes to quaternion angles",
+    image: project5,
+    tags: ["Drones", "Quaternion", "Embedded Systems"],
+    year: "2020"
+  },
+  {
+    title: "Smart Cane for Blind",
+    description: "Designed Smart Cane for the Blind. The prototype was presented as a paper and exhibited at a conference",
+    image: project1,
+    tags: ["IoT", "Assistive Technology", "Hardware"],
+    year: "2019"
+  },
+  {
+    title: "Mini Operating System",
+    description: "Developed a mini operating system implementing core OS functionalities and concepts",
+    image: project2,
+    tags: ["OS", "C", "System Programming"],
+    year: "2019"
+  },
+  {
+    title: "Sound Tool Box",
+    description: "Worked on analysis of audio signal amplitude, frequency and phase modulation & demodulation, noise cancellation. Integrated all functionalities onto a single GUI using MATLAB",
+    image: project3,
+    tags: ["MATLAB", "Signal Processing", "Audio Analysis"],
+    year: "2019"
+  },
+  {
+    title: "Smart Gardening System",
+    description: "Automatic sensing of temperature, humidity, soil moisture content. Based on soil moisture value, land gets automatically irrigated by controlling the motor. Designed user android system using Bluetooth module to display parameters and motor status",
+    image: project4,
+    tags: ["Arduino", "IoT", "Android", "Automation"],
+    year: "2019"
   },
 ];
 
