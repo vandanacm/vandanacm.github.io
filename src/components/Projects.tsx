@@ -1,31 +1,40 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
-import project5 from "@/assets/project-5.jpg";
+import clinicalAiImg from "@/assets/project-clinical-ai.jpg";
+import sqlbotImg from "@/assets/project-sqlbot.jpg";
+import medicalChainImg from "@/assets/project-medical-chain.jpg";
+import wasteMonitoringImg from "@/assets/project-waste-monitoring.jpg";
+import colorizationImg from "@/assets/project-colorization.jpg";
+import drowsinessImg from "@/assets/project-drowsiness.jpg";
+import arteasyImg from "@/assets/project-arteasy.jpg";
+import intruderReidImg from "@/assets/project-intruder-reid.jpg";
+import breathMonitorImg from "@/assets/project-breath-monitor.jpg";
+import droneGimbalImg from "@/assets/project-drone-gimbal.jpg";
+import smartCaneImg from "@/assets/project-smart-cane.jpg";
+import miniOsImg from "@/assets/project-mini-os.jpg";
+import soundToolboxImg from "@/assets/project-sound-toolbox.jpg";
+import smartGardenImg from "@/assets/project-smart-garden.jpg";
 
 const projects = [
   {
     title: "Clinical Intelligent System",
     description: "RAG-based clinical Q&A system using OpenAI GPT-4o mini with ChromaDB vector database for semantic search, delivering factually accurate medical responses",
-    image: project1,
+    image: clinicalAiImg,
     tags: ["OpenAI", "RAG", "ChromaDB", "Python"],
     year: "2025"
   },
   {
     title: "SQLbot - NLP to SQL Converter",
     description: "Rasa-Core NLP module converting plain English to SQL queries, with rasa-action-server connecting to databases for intelligent query execution",
-    image: project2,
+    image: sqlbotImg,
     tags: ["Rasa", "NLP", "SQL", "Python"],
     year: "2022"
   },
   {
     title: "Medical Chain - EHR System",
     description: "Blockchain-integrated Electronic Health Record system with UNet lung segmentation (92-95% accuracy), IPFS storage, and Ethereum smart contracts for COVID-19 management",
-    image: project3,
+    image: medicalChainImg,
     tags: ["Blockchain", "Deep Learning", "IPFS", "React"],
     year: "2022",
     demoUrl: "https://vimeo.com/705705822"
@@ -33,77 +42,77 @@ const projects = [
   {
     title: "Smart City Waste Monitoring System",
     description: "Hardware prototype integrated with load cell and HX711 module with Arduino and NodeMCU. Integrated with ThingSpeak for analytics and data collection of waste type and weight to maintain a balance credit system for individuals",
-    image: project4,
+    image: wasteMonitoringImg,
     tags: ["Arduino", "NodeMCU", "IoT", "ThingSpeak"],
     year: "2021"
   },
   {
     title: "Automatic Colorization Using Auto-Encoders",
     description: "Designed an Autoencoder model for the conversion of black and white images to colored images without human intervention. Feed-forward pass to CNN implemented using Cifar10 dataset",
-    image: project5,
+    image: colorizationImg,
     tags: ["AutoEncoder", "CNN", "Deep Learning", "Python"],
     year: "2021"
   },
   {
     title: "Highway Drowsiness Detection",
     description: "Real-time CNN-based drowsiness detection deployed on Raspberry Pi with 95% accuracy, using OpenCV and 7000 eye data images for highway driver safety",
-    image: project1,
+    image: drowsinessImg,
     tags: ["CNN", "OpenCV", "Raspberry Pi", "TensorFlow"],
     year: "2021"
   },
   {
     title: "ARTEASY - A Store With Purpose",
     description: "Arteasy believes in handmade products supporting collaborative and sustainable design. Breaching the gap between online market and crafts of artisans from indigenous communities to help reach financial independence",
-    image: project2,
+    image: arteasyImg,
     tags: ["E-commerce", "Social Impact", "Web Development"],
     year: "2020"
   },
   {
     title: "Intruder ReID and Tracking",
     description: "Re-identifying persons and plotting detection locations for surveillance application using Market1501 and COCO datasets. Implemented with ResNet50 and YOLOv3 algorithms",
-    image: project3,
+    image: intruderReidImg,
     tags: ["ResNet50", "YOLOv3", "Computer Vision", "Python"],
     year: "2020"
   },
   {
     title: "Smart Breath Monitor at Home",
     description: "Designed hardware using MAX30100 sensor and ESP8266 controller. IBM cloud for data collection. ML model using Regression to analyze and predict pulse rate and SpO2 for normal and Covid/respiratory disorder patients",
-    image: project4,
+    image: breathMonitorImg,
     tags: ["IoT", "ML", "ESP8266", "IBM Cloud"],
     year: "2020"
   },
   {
     title: "Complementary Filter for Drone Gimbal Lock",
     description: "Designed a complementary filter to avoid gimbal lock in drones by converting Euler angles of raw, pitch, yaw axes to quaternion angles",
-    image: project5,
+    image: droneGimbalImg,
     tags: ["Drones", "Quaternion", "Embedded Systems"],
     year: "2020"
   },
   {
     title: "Smart Cane for Blind",
     description: "Designed Smart Cane for the Blind. The prototype was presented as a paper and exhibited at a conference",
-    image: project1,
+    image: smartCaneImg,
     tags: ["IoT", "Assistive Technology", "Hardware"],
     year: "2019"
   },
   {
     title: "Mini Operating System",
     description: "Developed a mini operating system implementing core OS functionalities and concepts",
-    image: project2,
+    image: miniOsImg,
     tags: ["OS", "C", "System Programming"],
     year: "2019"
   },
   {
     title: "Sound Tool Box",
     description: "Worked on analysis of audio signal amplitude, frequency and phase modulation & demodulation, noise cancellation. Integrated all functionalities onto a single GUI using MATLAB",
-    image: project3,
+    image: soundToolboxImg,
     tags: ["MATLAB", "Signal Processing", "Audio Analysis"],
     year: "2019"
   },
   {
     title: "Smart Gardening System",
     description: "Automatic sensing of temperature, humidity, soil moisture content. Based on soil moisture value, land gets automatically irrigated by controlling the motor. Designed user android system using Bluetooth module to display parameters and motor status",
-    image: project4,
+    image: smartGardenImg,
     tags: ["Arduino", "IoT", "Android", "Automation"],
     year: "2019"
   },
