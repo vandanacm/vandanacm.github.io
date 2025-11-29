@@ -46,7 +46,6 @@ const education = [
     school: "Vellore Institute of Technology",
     location: "Vellore, India",
     degree: "Bachelor of Technology, Electronics & Communication Engineering",
-    gpa: "GPA: 8.85/10",
     period: "2018 - 2022",
     activities: ["Undergraduate Researcher", "Chairperson of Ayuda NGO", "Technical Team Member of IEEE-MTTS", "IoThinc", "Founding Member & Head of Public Relations, Digit Squad-VIT", "Documentation Head of Curtiss R/C, SAE-VIT", "Chairperson of KLA", "Stalls Coordinator - Ayuda, Riviera 2020", "Sales Team, Riviera 2020"],
   },
@@ -122,7 +121,7 @@ const Experience = () => {
                       <div>
                         <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{edu.school}</CardTitle>
                         <CardDescription className="text-base font-medium mt-1">
-                          {edu.degree} {edu.gpa && <span className="text-primary">• {edu.gpa}</span>}
+                          {edu.degree}
                         </CardDescription>
                       </div>
                       <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{edu.period}</Badge>
