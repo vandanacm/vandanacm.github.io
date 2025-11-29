@@ -84,7 +84,7 @@ const volunteerActivities = [
     type: "Volunteer"
   },
   {
-    title: "Member",
+    title: "Graduate Student Member",
     organization: "Graduate Student Association, UC Davis",
     period: "2025",
     description: "Engaged in graduate student community and advocacy",
