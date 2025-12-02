@@ -80,11 +80,11 @@ const volunteerActivities = [
     title: "Graduate Student Member",
     organization: "IEEE, UC Davis",
     period: "2025",
-    description: "Active member contributing to science and technology initiatives",
+    description: "Active member contributing to science and technology initiatives. Mentoring undergraduate students in their assignments, projects and workshops",
     type: "Volunteer"
   },
   {
-    title: "Member",
+    title: "Graduate Student Member",
     organization: "Graduate Student Association, UC Davis",
     period: "2025",
     description: "Engaged in graduate student community and advocacy",
