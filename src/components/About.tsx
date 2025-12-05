@@ -36,7 +36,7 @@ const About = () => {
             building scalable systems that are secure and impactful.
           </p>
           <p>
-            Outside of work and studies, I enjoy tracking my nutrition, gardening, travelling to new places, volunteering, and capturing nature. Interested in ML/AI research, innovative tech, or full-stack collaboration? Let's connect—I am always open to new ideas and opportunities.
+            Outside of work and studies, I enjoy tracking my nutrition, gardening, travelling to new places, volunteering, and capturing nature. Interested in ML/AI research, Technology, or Full-Stack collaboration? Let's connect—I am always open to new ideas and opportunities.
           </p>
           
           {/* Resume Download Button */}

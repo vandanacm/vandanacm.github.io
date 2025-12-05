@@ -13,7 +13,7 @@ const Contact = () => {
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-6" />
         <p className="text-xl text-foreground/70 mb-12 leading-relaxed">
-          Interested in ML/AI research, healthcare tech, or full-stack collaboration? Let's connect!
+          Interested in ML/AI research, Technology, or Full-Stack collaboration? Let's connect!
         </p>
         
         <Button 
