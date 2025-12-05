@@ -45,9 +45,10 @@ const Gallery = () => {
   return (
     <section id="gallery" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
+        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Gallery
         </h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
         <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
           Moments from my journey
         </p>
