@@ -60,11 +60,13 @@ const Gallery = () => {
                   key={index}
                   className="flex-[0_0_100%] min-w-0 md:flex-[0_0_50%] lg:flex-[0_0_33.33%] px-2"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-lg group">
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-lg group">
                     <img
                       src={image.src}
                       alt={image.alt}
+                      loading="eager"
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      style={{ imageRendering: 'auto' }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                       <span className="text-white text-sm font-medium">
