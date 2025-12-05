@@ -7,6 +7,7 @@ import Projects from "@/components/Projects";
 import Publications from "@/components/Publications";
 import Leadership from "@/components/Leadership";
 import Awards from "@/components/Awards";
+import Gallery from "@/components/Gallery";
 import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 
@@ -22,6 +23,7 @@ const Index = () => {
       <Publications />
       <Leadership />
       <Awards />
+      <Gallery />
       <Resume />
       <Contact />
       
