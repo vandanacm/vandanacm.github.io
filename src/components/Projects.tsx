@@ -15,8 +15,16 @@ import smartCaneImg from "@/assets/project-smart-cane.jpg";
 import miniOsImg from "@/assets/project-mini-os.jpg";
 import soundToolboxImg from "@/assets/project-sound-toolbox.jpg";
 import smartGardenImg from "@/assets/project-smart-garden.jpg";
+import resumeClassifierImg from "@/assets/project-resume-classifier.jpg";
 
 const projects = [
+  {
+    title: "Resume Classification using DistilBERT",
+    description: "End-to-end resume classification model using DistilBERT transformer, comparing performance against traditional ML models including SVM, XGBoost, and Naive Bayes for automated resume categorization",
+    image: resumeClassifierImg,
+    tags: ["DistilBERT", "NLP", "SVM", "XGBoost", "Python"],
+    year: "2025"
+  },
   {
     title: "Clinical Intelligent System",
     description: "RAG-based clinical Q&A system using OpenAI GPT-4o mini with ChromaDB vector database for semantic search, delivering factually accurate medical responses",
