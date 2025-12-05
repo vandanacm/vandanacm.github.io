@@ -139,14 +139,13 @@ const Leadership = () => {
     <section id="leadership" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-up">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
-              Leadership & Volunteer Experience
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Community engagement, leadership roles, and volunteer initiatives
-            </p>
-          </div>
+          <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
+            Leadership & Volunteer Experience
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
+          <p className="text-center text-foreground/70 mb-12 text-lg">
+            Community engagement, leadership roles, and volunteer initiatives
+          </p>
 
           {/* Leadership Roles */}
           <div className="mb-12">
