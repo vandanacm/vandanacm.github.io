@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, Trophy, Star, Medal } from "lucide-react";
+import { useRef, useEffect, useState } from "react";
 
 const awards = [
   {
@@ -61,8 +62,33 @@ const awards = [
 ];
 
 const Awards = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [parallaxY, setParallaxY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+      const rect = sectionRef.current.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        const relativeScroll = window.scrollY - sectionRef.current.offsetTop + window.innerHeight;
+        setParallaxY(relativeScroll * 0.07);
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section id="awards" className="py-20 bg-background relative overflow-hidden">
+    <section ref={sectionRef} id="awards" className="py-20 bg-background relative overflow-hidden">
+      {/* Parallax decorative elements */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{ transform: `translateY(${parallaxY}px)` }}
+      >
+        <div className="absolute -top-40 left-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 right-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
+      </div>
+      
       {/* Decorative grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-10" />
       

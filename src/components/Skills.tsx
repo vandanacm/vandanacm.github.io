@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Code2, Palette, Smartphone, Globe } from "lucide-react";
+import { useRef, useEffect, useState } from "react";
 
 const skills = [
   {
@@ -25,8 +26,33 @@ const skills = [
 ];
 
 const Skills = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [parallaxY, setParallaxY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+      const rect = sectionRef.current.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        const relativeScroll = window.scrollY - sectionRef.current.offsetTop + window.innerHeight;
+        setParallaxY(relativeScroll * 0.08);
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section id="skills" className="py-20 bg-background relative overflow-hidden">
+    <section ref={sectionRef} id="skills" className="py-20 bg-background relative overflow-hidden">
+      {/* Parallax decorative elements */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{ transform: `translateY(${parallaxY}px)` }}
+      >
+        <div className="absolute -top-32 -left-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      </div>
+      
       {/* Decorative grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20" />
       
