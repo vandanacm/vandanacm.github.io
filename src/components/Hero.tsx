@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import TypeWriter from "@/components/TypeWriter";
 import profilePic from "@/assets/profile.jpg";
 
 const Hero = () => {
@@ -22,30 +23,27 @@ const Hero = () => {
         
         <div className="animate-fade-in">
           <h1 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6">
-            <span className="inline-block animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              Hi, I am{' '}
-              <span className="text-primary">Vandana</span>
+            <span className="inline-block">
+              <TypeWriter text="Hi, I am " speed={60} delay={300} />
+              <TypeWriter text="Vandana" speed={80} delay={800} className="text-primary" />
             </span>
             <br />
-            <span className="inline-block animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              an{' '}
-              <span className="hover:scale-105 transition-transform duration-300 inline-block">
-                AI/ML Enthusiast
-              </span>
+            <span className="inline-block">
+              <TypeWriter text="an AI/ML Enthusiast" speed={50} delay={1600} />
             </span>
             <br />
-            <span className="text-primary inline-block hover:scale-105 transition-transform duration-300 animate-slide-up" style={{ animationDelay: '0.3s' }}>
-              & Full Stack Engineer
+            <span className="inline-block text-primary">
+              <TypeWriter text="& Full Stack Engineer" speed={50} delay={2500} />
             </span>
           </h1>
         </div>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl mx-auto animate-slide-up font-light" style={{ animationDelay: '0.4s' }}>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl mx-auto animate-slide-up font-light" style={{ animationDelay: '3.5s', animationFillMode: 'backwards' }}>
           MS in ECE @ UC Davis
         </p>
-        <p className="text-lg md:text-xl text-muted-foreground/80 mb-4 max-w-2xl mx-auto animate-slide-up font-light" style={{ animationDelay: '0.5s' }}>
+        <p className="text-lg md:text-xl text-muted-foreground/80 mb-4 max-w-2xl mx-auto animate-slide-up font-light" style={{ animationDelay: '3.7s', animationFillMode: 'backwards' }}>
           Building intelligent systems with AI and scalable cloud architecture
         </p>
-        <p className="text-lg md:text-xl text-primary font-medium mb-8 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.6s' }}>
+        <p className="text-lg md:text-xl text-primary font-medium mb-8 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '3.9s', animationFillMode: 'backwards' }}>
           Actively looking for my next opportunity
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
