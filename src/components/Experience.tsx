@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, GraduationCap } from "lucide-react";
+import { useRef, useEffect, useState } from "react";
 
 const experiences = [
   {
@@ -52,11 +53,32 @@ const education = [
 ];
 
 const Experience = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [parallaxY, setParallaxY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+      const rect = sectionRef.current.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        const relativeScroll = window.scrollY - sectionRef.current.offsetTop + window.innerHeight;
+        setParallaxY(relativeScroll * 0.06);
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section id="experience" className="py-20 bg-background relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+    <section ref={sectionRef} id="experience" className="py-20 bg-background relative overflow-hidden">
+      {/* Parallax decorative elements */}
+      <div 
+        className="absolute inset-0 pointer-events-none"
+        style={{ transform: `translateY(${parallaxY}px)` }}
+      >
+        <div className="absolute top-20 -right-32 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 -left-32 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
