@@ -29,8 +29,8 @@ const About = () => {
         </div>
         <div className="space-y-6 text-lg text-foreground/80 leading-relaxed bg-card/30 backdrop-blur-sm p-8 rounded-lg border border-border/50 shadow-card">
           <p>
-            I am Vandana, a software engineer with 3+ years of experience in full-stack development, REST APIs, 
-            GraphQL APIs, and cloud infrastructure. Currently, pursuing my Master's in Electrical and Computer 
+            An Engineer with 3+ years of experience in full-stack development, REST APIs, GraphQL APIs, ML/AI pipeline 
+            and Cloud infrastructure. Currently, pursuing my Master's in Electrical and Computer 
             Engineering at UC Davis, with a focus on scalable Intelligent systems. I am passionate about research 
             in ML and AI, leading to digital health innovation. I enjoy finding smarter ways to make tech accessible, 
             building scalable systems that are secure and impactful.
