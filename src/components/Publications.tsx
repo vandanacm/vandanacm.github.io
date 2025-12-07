@@ -59,7 +59,7 @@ const Publications = () => {
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
         <p className="text-center text-foreground/70 mb-12 text-lg">
-          Contributing to academic research in AI, blockchain, and healthcare
+          Contributing to academic research in ML/AI, blockchain, embedded systems and healthcare
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">

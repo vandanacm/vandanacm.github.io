@@ -22,20 +22,31 @@ const Hero = () => {
         
         <div className="animate-fade-in">
           <h1 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6">
-            <span className="inline-block hover:scale-105 transition-transform duration-300">
-              AI/ML Enthusiast
+            <span className="inline-block animate-slide-up" style={{ animationDelay: '0.1s' }}>
+              Hi, I am{' '}
+              <span className="text-primary">Vandana</span>
             </span>
             <br />
-            <span className="text-primary inline-block hover:scale-105 transition-transform duration-300">
+            <span className="inline-block animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              an{' '}
+              <span className="hover:scale-105 transition-transform duration-300 inline-block">
+                AI/ML Enthusiast
+              </span>
+            </span>
+            <br />
+            <span className="text-primary inline-block hover:scale-105 transition-transform duration-300 animate-slide-up" style={{ animationDelay: '0.3s' }}>
               & Full Stack Engineer
             </span>
           </h1>
         </div>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl mx-auto animate-slide-up font-light">
+        <p className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl mx-auto animate-slide-up font-light" style={{ animationDelay: '0.4s' }}>
           MS in ECE @ UC Davis
         </p>
-        <p className="text-lg md:text-xl text-muted-foreground/80 mb-8 max-w-2xl mx-auto animate-slide-up font-light">
+        <p className="text-lg md:text-xl text-muted-foreground/80 mb-4 max-w-2xl mx-auto animate-slide-up font-light" style={{ animationDelay: '0.5s' }}>
           Building intelligent systems with AI and scalable cloud architecture
+        </p>
+        <p className="text-lg md:text-xl text-primary font-medium mb-8 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.6s' }}>
+          Actively looking for my next opportunity
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Button 

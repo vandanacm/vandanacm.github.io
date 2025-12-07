@@ -133,7 +133,8 @@ const Projects = () => {
         <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Featured Projects
         </h2>
-        <p className="text-center text-muted-foreground mb-12 text-lg">
+        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
+        <p className="text-center text-foreground/70 mb-12 text-lg">
           A selection of my recent work
         </p>
         
