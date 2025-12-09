@@ -159,7 +159,7 @@ const Leadership = () => {
               {leadershipRoles.map((role, index) => (
                 <Card 
                   key={index} 
-                  className="hover:shadow-lg transition-all duration-300 border-border/50 animate-fade-up"
+                  className="hover:shadow-lg hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 border-border/50 animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardHeader>
@@ -193,7 +193,7 @@ const Leadership = () => {
               {volunteerActivities.map((activity, index) => (
                 <Card 
                   key={index} 
-                  className="hover:shadow-lg transition-all duration-300 border-border/50 animate-fade-up"
+                  className="hover:shadow-lg hover:-translate-y-2 hover:border-primary/30 transition-all duration-300 border-border/50 animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardHeader>

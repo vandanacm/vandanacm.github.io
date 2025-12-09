@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, MapPin } from "lucide-react";
+import { ExternalLink, MapPin } from "lucide-react";
 
 const About = () => {
   const resumeUrl = "/resume.pdf";
@@ -46,9 +46,9 @@ const About = () => {
               size="lg"
               className="bg-gradient-hero hover:opacity-90 transition-opacity shadow-tech-glow"
             >
-              <a href={resumeUrl} download="resume.pdf">
-                <Download className="w-5 h-5 mr-2" />
-                Download Resume
+              <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="w-5 h-5 mr-2" />
+                View Resume
               </a>
             </Button>
           </div>
