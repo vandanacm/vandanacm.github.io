@@ -29,9 +29,8 @@ const Hero = () => {
             </span>
             <br />
             <span className="inline-block">
-              <TypeWriter text="AI/ML Enthusiast " speed={50} delay={1600} />
-              <TypeWriter text="& " speed={50} delay={2200} />
-              <TypeWriter text="Full Stack Engineer" speed={50} delay={2300} className="text-primary" />
+              <TypeWriter text="AI/ML Enthusiast & " speed={50} delay={1600} />
+              <TypeWriter text="Full Stack Engineer" speed={50} delay={2400} className="text-primary" />
             </span>
           </h1>
         </div>
