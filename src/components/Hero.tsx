@@ -25,7 +25,9 @@ const Hero = () => {
           <h1 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6">
             <span className="inline-block">
               <TypeWriter text="Hi, I am " speed={60} delay={300} />
-              <TypeWriter text="Vandana" speed={80} delay={800} className="text-primary" />
+              <span className="inline-block text-primary font-bold animate-pulse-subtle">
+                <TypeWriter text="VM" speed={150} delay={800} className="tracking-wider" />
+              </span>
             </span>
             <br />
             <span className="inline-block">

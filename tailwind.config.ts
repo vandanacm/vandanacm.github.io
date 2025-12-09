@@ -72,6 +72,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "pulse-subtle": {
+          "0%, 100%": { opacity: "1", transform: "scale(1)" },
+          "50%": { opacity: "0.85", transform: "scale(1.02)" }
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -134,6 +138,7 @@ export default {
         "fade-in": "fade-in 0.6s ease-out",
         "slide-up": "slide-up 0.5s ease-out",
         "float": "float 3s ease-in-out infinite",
+        "pulse-subtle": "pulse-subtle 2s ease-in-out infinite",
       },
     },
   },
