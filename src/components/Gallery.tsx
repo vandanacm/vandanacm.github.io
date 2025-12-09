@@ -14,10 +14,11 @@ import gallery7 from "@/assets/gallery/gallery-7.jpg";
 import gallery8 from "@/assets/gallery/gallery-8.jpg";
 import gallery9 from "@/assets/gallery/gallery-9.jpg";
 import gallery10 from "@/assets/gallery/gallery-10.jpg";
+import vitTechTower from "@/assets/gallery/vit-tech-tower.jpg";
 
 const galleryImages = [
   { src: gallery1, alt: "UC Davis Water Tower" },
-  { src: gallery2, alt: "UC Davis Campus Collage" },
+  { src: vitTechTower, alt: "VIT Technology Tower" },
   { src: gallery3, alt: "At UC Davis" },
   { src: gallery4, alt: "Golden Gate Bridge Sunset" },
   { src: gallery5, alt: "At Optum Office" },

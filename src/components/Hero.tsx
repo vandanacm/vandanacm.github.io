@@ -25,17 +25,13 @@ const Hero = () => {
           <h1 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6">
             <span className="inline-block">
               <TypeWriter text="Hi, I am " speed={60} delay={300} />
-              <span className="inline-block text-primary font-bold animate-pulse-subtle">
-                <TypeWriter text="VM" speed={150} delay={800} className="tracking-wider" />
-              </span>
+              <TypeWriter text="Vandana." speed={80} delay={800} className="text-primary" />
             </span>
             <br />
             <span className="inline-block">
-              <TypeWriter text="an AI/ML Enthusiast" speed={50} delay={1600} />
-            </span>
-            <br />
-            <span className="inline-block text-primary">
-              <TypeWriter text="& Full Stack Engineer" speed={50} delay={2500} />
+              <TypeWriter text="AI/ML Enthusiast " speed={50} delay={1600} />
+              <TypeWriter text="& " speed={50} delay={2200} />
+              <TypeWriter text="Full Stack Engineer" speed={50} delay={2300} className="text-primary" />
             </span>
           </h1>
         </div>
