@@ -173,7 +173,7 @@ const Leadership = () => {
                           {role.period}
                         </Badge>
                       </div>
-                      <CardTitle className="text-xl text-card-foreground group-hover:text-primary transition-colors duration-300">{role.title}</CardTitle>
+                      <CardTitle className="text-xl text-card-foreground">{role.title}</CardTitle>
                       <CardDescription className="text-base font-medium">
                         {role.organization}
                       </CardDescription>
@@ -213,7 +213,7 @@ const Leadership = () => {
                           {activity.period}
                         </Badge>
                       </div>
-                      <CardTitle className="text-xl text-card-foreground group-hover:text-primary transition-colors duration-300">{activity.title}</CardTitle>
+                      <CardTitle className="text-xl text-card-foreground">{activity.title}</CardTitle>
                       <CardDescription className="text-base font-medium">
                         {activity.organization}
                       </CardDescription>
