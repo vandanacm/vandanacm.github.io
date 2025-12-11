@@ -149,11 +149,9 @@ const Leadership = () => {
 
           {/* Leadership Roles */}
           <div className="mb-12">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 rounded-lg bg-primary/10">
-                <Users className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold">Leadership Roles</h3>
+            <div className="flex items-center gap-2 mb-6">
+              <Users className="w-6 h-6 text-primary" />
+              <h3 className="font-sans text-2xl font-bold text-foreground">Leadership Roles</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               {leadershipRoles.map((role, index) => {
@@ -173,7 +171,7 @@ const Leadership = () => {
                           {role.period}
                         </Badge>
                       </div>
-                      <CardTitle className="text-xl text-card-foreground">{role.title}</CardTitle>
+                      <CardTitle className="text-xl text-card-foreground group-hover:text-primary transition-colors duration-300">{role.title}</CardTitle>
                       <CardDescription className="text-base font-medium">
                         {role.organization}
                       </CardDescription>
@@ -189,11 +187,9 @@ const Leadership = () => {
 
           {/* Volunteer Activities */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 rounded-lg bg-primary/10">
-                <Heart className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold">Volunteer Activities</h3>
+            <div className="flex items-center gap-2 mb-6">
+              <Heart className="w-6 h-6 text-primary" />
+              <h3 className="font-sans text-2xl font-bold text-foreground">Volunteer Activities</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               {volunteerActivities.map((activity, index) => {
@@ -213,7 +209,7 @@ const Leadership = () => {
                           {activity.period}
                         </Badge>
                       </div>
-                      <CardTitle className="text-xl text-card-foreground">{activity.title}</CardTitle>
+                      <CardTitle className="text-xl text-card-foreground group-hover:text-primary transition-colors duration-300">{activity.title}</CardTitle>
                       <CardDescription className="text-base font-medium">
                         {activity.organization}
                       </CardDescription>
