@@ -23,8 +23,8 @@ const Index = () => {
       <Publications />
       <Leadership />
       <Awards />
-      <Gallery />
       <Resume />
+      <Gallery />
       <Contact />
       
       {/* Footer */}
