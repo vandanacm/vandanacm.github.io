@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, FileText } from "lucide-react";
+import { ExternalLink, FileText } from "lucide-react";
 
 const Resume = () => {
   // Place your resume.pdf in the public folder
@@ -17,7 +17,7 @@ const Resume = () => {
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
         <p className="text-center text-foreground/70 mb-12 text-lg">
-          Download my complete professional resume
+          View my complete professional resume
         </p>
 
         <div className="max-w-2xl mx-auto">
@@ -42,9 +42,9 @@ const Resume = () => {
                 size="lg"
                 className="bg-gradient-hero hover:opacity-90 transition-opacity shadow-tech-glow"
               >
-                <a href={resumeUrl} download="resume.pdf">
-                  <Download className="w-5 h-5 mr-2" />
-                  Download Resume
+                <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  View Resume
                 </a>
               </Button>
             </CardContent>
