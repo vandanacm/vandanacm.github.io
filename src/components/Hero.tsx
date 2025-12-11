@@ -27,20 +27,18 @@ const Hero = () => {
               <TypeWriter text="Hi, I am " speed={60} delay={300} />
               <TypeWriter text="Vandana." speed={80} delay={800} className="text-primary" />
             </span>
-            <br />
-            <span className="inline-block">
-              <TypeWriter text="AI/ML Enthusiast & " speed={50} delay={1600} />
-              <TypeWriter text="Full Stack Engineer" speed={50} delay={2400} className="text-primary" />
-            </span>
           </h1>
         </div>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl mx-auto animate-slide-up font-light" style={{ animationDelay: '3.5s', animationFillMode: 'backwards' }}>
+        <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-2 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '1.8s', animationFillMode: 'forwards' }}>
+          AI/ML Enthusiast & <span className="text-primary">Full Stack Engineer</span>
+        </p>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl mx-auto animate-fade-in opacity-0 font-light" style={{ animationDelay: '2s', animationFillMode: 'forwards' }}>
           MS in ECE @ UC Davis
         </p>
-        <p className="text-lg md:text-xl text-muted-foreground/80 mb-4 max-w-2xl mx-auto animate-slide-up font-light" style={{ animationDelay: '3.7s', animationFillMode: 'backwards' }}>
+        <p className="text-lg md:text-xl text-muted-foreground/80 mb-4 max-w-2xl mx-auto animate-fade-in opacity-0 font-light" style={{ animationDelay: '2.2s', animationFillMode: 'forwards' }}>
           Building intelligent systems with AI and scalable cloud architecture
         </p>
-        <p className="text-lg md:text-xl text-primary font-medium mb-8 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '3.9s', animationFillMode: 'backwards' }}>
+        <p className="text-lg md:text-xl text-primary font-medium mb-8 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '2.4s', animationFillMode: 'forwards' }}>
           Actively looking for my next opportunity
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
