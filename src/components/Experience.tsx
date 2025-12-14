@@ -2,6 +2,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, GraduationCap } from "lucide-react";
 import { useRef, useEffect, useState } from "react";
+import logoOptum from "@/assets/logo-optum.png";
+import logoUCDavis from "@/assets/logo-ucdavis.png";
+import logoVIT from "@/assets/logo-vit.png";
 
 const experiences = [
   {
@@ -10,6 +13,7 @@ const experiences = [
     location: "Hyderabad, India",
     role: "Full Stack Engineer",
     period: "September 2024 – September 2025",
+    logo: logoOptum,
     achievements: [
       "Built and deployed a clinical question-answering assistant using a RAG architecture (OpenAI GPT-4o mini, ChromaDB, OpenAI textembedding-3-small), implementing backend retrieval workflows integrated with LLM prompts to deliver accurate, context-aware medical query responses",
       "Developed and maintained modern, scalable web interfaces (React, Next.js) for member portals serving 50M+ users across four business lines. Optimized member coverage and benefits journeys to enhance user engagement, informed decision-making, and accessibility",
@@ -24,6 +28,7 @@ const experiences = [
     location: "Hyderabad, India",
     role: "Software Engineer",
     period: "June 2022 – September 2024",
+    logo: logoOptum,
     achievements: [
       "Delivered secure REST APIs in Java and Springboot with HIPAA compliance, boosting API performance by cutting database call latency by 20% for clinical workflows",
       "Integrated CareMemo with EMR systems via bi-directional APIs, automating onboarding, After Visit Summary and message notifications, while streamlining clinician workflows and scaling platform expansion across multiple Senior Community Care markets",
@@ -40,6 +45,7 @@ const education = [
     location: "Davis, California",
     degree: "Master of Science, Electrical and Computer Engineering (ML Track)",
     period: "2025 - Present",
+    logo: logoUCDavis,
     coursework: ["Big Data & High Performance Statistical Computing", "Modeling & Optimization in Computer Engineering"],
     activities: ["Club of Female Electrical Engineers", "IEEE", "Graduate Student Association"],
   },
@@ -48,6 +54,7 @@ const education = [
     location: "Vellore, India",
     degree: "Bachelor of Technology, Electronics & Communication Engineering",
     period: "2018 - 2022",
+    logo: logoVIT,
     activities: ["Undergraduate Researcher", "Chairperson of Ayuda NGO", "Technical Team Member of IEEE-MTTS", "IoThinc", "Founding Member & Head of Public Relations, Digit Squad-VIT", "Documentation Head of Curtiss R/C, SAE-VIT", "Chairperson of KLA", "Stalls Coordinator - Ayuda, Riviera 2020", "Sales Team, Riviera 2020"],
   },
 ];
@@ -101,14 +108,21 @@ const Experience = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardHeader>
-                    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
-                      <div>
-                        <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{exp.role}</CardTitle>
-                        <CardDescription className="text-base font-medium mt-1">{exp.company}</CardDescription>
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-16 h-16 bg-background rounded-lg p-2 flex items-center justify-center border border-border">
+                        <img src={exp.logo} alt={exp.company} className="w-full h-full object-contain" />
                       </div>
-                      <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{exp.period}</Badge>
+                      <div className="flex-1">
+                        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
+                          <div>
+                            <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{exp.role}</CardTitle>
+                            <CardDescription className="text-base font-medium mt-1">{exp.company}</CardDescription>
+                          </div>
+                          <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{exp.period}</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{exp.location}</p>
+                      </div>
                     </div>
-                    <p className="text-sm text-muted-foreground">{exp.location}</p>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
@@ -139,16 +153,23 @@ const Experience = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardHeader>
-                    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
-                      <div>
-                        <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{edu.school}</CardTitle>
-                        <CardDescription className="text-base font-medium mt-1">
-                          {edu.degree}
-                        </CardDescription>
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-16 h-16 bg-background rounded-lg p-2 flex items-center justify-center border border-border">
+                        <img src={edu.logo} alt={edu.school} className="w-full h-full object-contain" />
                       </div>
-                      <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{edu.period}</Badge>
+                      <div className="flex-1">
+                        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
+                          <div>
+                            <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{edu.school}</CardTitle>
+                            <CardDescription className="text-base font-medium mt-1">
+                              {edu.degree}
+                            </CardDescription>
+                          </div>
+                          <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{edu.period}</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{edu.location}</p>
+                      </div>
                     </div>
-                    <p className="text-sm text-muted-foreground">{edu.location}</p>
                   </CardHeader>
                   <CardContent>
                     {edu.coursework && (
