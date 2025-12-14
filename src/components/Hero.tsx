@@ -24,8 +24,8 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6">
             <span className="inline-block">
-              <TypeWriter text="Hi, I am " speed={60} delay={300} />
-              <TypeWriter text="Vandana." speed={80} delay={800} className="text-primary" />
+              <TypeWriter text="Hey, I'm " speed={60} delay={300} />
+              <TypeWriter text="Vandana!" speed={80} delay={800} className="text-primary" />
             </span>
           </h1>
         </div>
@@ -39,7 +39,7 @@ const Hero = () => {
           Building intelligent systems with AI and scalable cloud architecture
         </p>
         <p className="text-lg md:text-xl text-primary font-medium mb-8 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '2.4s', animationFillMode: 'forwards' }}>
-          Actively looking for my next opportunity
+          Actively looking for Summer'26 Internships!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <Button 
