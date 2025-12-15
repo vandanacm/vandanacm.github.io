@@ -1,33 +1,111 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { Mail, Github, Linkedin, Send } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    // Create mailto link with form data
+    const mailtoLink = `mailto:vandanacmansur@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+    window.open(mailtoLink, '_blank');
+    
+    toast({
+      title: "Opening email client...",
+      description: "Your default email client should open shortly.",
+    });
+    
+    setIsSubmitting(false);
+  };
+
   return (
     <section id="contact" className="py-20 bg-gradient-subtle relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
       
-      <div className="container mx-auto px-4 max-w-3xl text-center relative z-10">
-        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4">
-          Let's Work Together
+      <div className="container mx-auto px-4 max-w-3xl relative z-10">
+        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-12 text-left">
+          Let's Collaborate!
         </h2>
-        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-6" />
-        <p className="text-xl text-foreground/70 mb-12 leading-relaxed">
-          Interested in ML/AI research, Technology, or Full-Stack collaboration? Let's connect!
-        </p>
         
-        <Button 
-          size="lg"
-          className="bg-gradient-hero hover:opacity-90 text-primary-foreground shadow-elegant hover:shadow-hover hover:scale-105 transition-all duration-300 mb-12 group"
-          asChild
-        >
-          <a href="mailto:vandanacmansur@gmail.com">
-            <Mail className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-            Get In Touch
-          </a>
-        </Button>
+        <form onSubmit={handleSubmit} className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-2">
+              <Label htmlFor="name" className="text-foreground">Name</Label>
+              <Input
+                id="name"
+                placeholder="Full name"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                required
+                className="bg-muted/50 border-border focus:border-primary"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="email" className="text-foreground">Email</Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="your.email@example.com"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                required
+                className="bg-muted/50 border-border focus:border-primary"
+              />
+            </div>
+          </div>
+          
+          <div className="space-y-2">
+            <Label htmlFor="subject" className="text-foreground">Subject</Label>
+            <Input
+              id="subject"
+              placeholder="What's this about?"
+              value={formData.subject}
+              onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+              required
+              className="bg-muted/50 border-border focus:border-primary"
+            />
+          </div>
+          
+          <div className="space-y-2">
+            <Label htmlFor="message" className="text-foreground">Message</Label>
+            <Textarea
+              id="message"
+              placeholder="Tell me about your project or just say hello!"
+              value={formData.message}
+              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+              required
+              rows={6}
+              className="bg-muted/50 border-border focus:border-primary resize-none"
+            />
+          </div>
+          
+          <Button 
+            type="submit"
+            size="lg"
+            disabled={isSubmitting}
+            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-elegant hover:shadow-hover transition-all duration-300"
+          >
+            <Send className="w-5 h-5 mr-2" />
+            Send Message
+          </Button>
+        </form>
 
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 mt-12">
           <Button 
             variant="outline" 
             size="icon"
