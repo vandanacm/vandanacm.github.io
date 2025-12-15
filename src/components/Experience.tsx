@@ -109,7 +109,7 @@ const Experience = () => {
                 >
                   <CardHeader>
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-16 h-16 bg-background rounded-lg p-2 flex items-center justify-center border border-border">
+                      <div className="flex-shrink-0 w-20 h-20 bg-background rounded-lg p-2 flex items-center justify-center border border-border">
                         <img src={exp.logo} alt={exp.company} className="w-full h-full object-contain" />
                       </div>
                       <div className="flex-1">
@@ -154,7 +154,7 @@ const Experience = () => {
                 >
                   <CardHeader>
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-16 h-16 bg-background rounded-lg p-2 flex items-center justify-center border border-border">
+                      <div className="flex-shrink-0 w-20 h-20 bg-background rounded-lg p-2 flex items-center justify-center border border-border">
                         <img src={edu.logo} alt={edu.school} className="w-full h-full object-contain" />
                       </div>
                       <div className="flex-1">
