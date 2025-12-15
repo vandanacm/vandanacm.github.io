@@ -16,6 +16,7 @@ import miniOsImg from "@/assets/project-mini-os.jpg";
 
 import smartGardenImg from "@/assets/project-smart-garden.jpg";
 import resumeClassifierImg from "@/assets/project-resume-classifier.jpg";
+import hospitalSchedulingImg from "@/assets/project-hospital-scheduling.jpg";
 
 const projects = [
   {
@@ -23,6 +24,13 @@ const projects = [
     description: "End-to-end resume classification model using DistilBERT transformer, comparing performance against traditional ML models including SVM, XGBoost, and Naive Bayes for automated resume categorization",
     image: resumeClassifierImg,
     tags: ["DistilBERT", "NLP", "SVM", "XGBoost", "Python"],
+    year: "2025"
+  },
+  {
+    title: "Hospital Patient Flow Optimization",
+    description: "Applied Flexible Job Shop Scheduling Problem (FJSP) framework with MILP optimization for hospital patient processing. Achieved 16.9% improvement over unscheduled operations and outperformed genetic algorithm approaches",
+    image: hospitalSchedulingImg,
+    tags: ["MILP", "Optimization", "Healthcare", "Python"],
     year: "2025"
   },
   {
