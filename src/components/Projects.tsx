@@ -13,7 +13,7 @@ import breathMonitorImg from "@/assets/project-breath-monitor.jpg";
 import droneGimbalImg from "@/assets/project-drone-gimbal.jpg";
 import smartCaneImg from "@/assets/project-smart-cane.jpg";
 import miniOsImg from "@/assets/project-mini-os.jpg";
-import soundToolboxImg from "@/assets/project-sound-toolbox.jpg";
+
 import smartGardenImg from "@/assets/project-smart-garden.jpg";
 import resumeClassifierImg from "@/assets/project-resume-classifier.jpg";
 
@@ -108,13 +108,6 @@ const projects = [
     description: "Developed a mini operating system implementing core OS functionalities and concepts",
     image: miniOsImg,
     tags: ["OS", "C", "System Programming"],
-    year: "2019"
-  },
-  {
-    title: "Sound Tool Box",
-    description: "Worked on analysis of audio signal amplitude, frequency and phase modulation & demodulation, noise cancellation. Integrated all functionalities onto a single GUI using MATLAB",
-    image: soundToolboxImg,
-    tags: ["MATLAB", "Signal Processing", "Audio Analysis"],
     year: "2019"
   },
   {
