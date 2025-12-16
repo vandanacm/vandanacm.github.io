@@ -12,7 +12,7 @@ const awards = [
   },
   {
     icon: Award,
-    title: "8x Diamond Recognition",
+    title: "8x Diamond Bravo",
     organization: "Optum, UnitedHealth Group",
     description: "For Performance, Innovation, Collaboration and Compassion",
     period: "June 2022 - September 2025",

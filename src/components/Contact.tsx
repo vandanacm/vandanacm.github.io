@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Github, Linkedin, Send } from "lucide-react";
+import { Github, Linkedin, Send, Handshake } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -20,9 +20,9 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Create mailto link with form data
+    // Create mailto link and directly trigger it
     const mailtoLink = `mailto:vandanacmansur@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
-    window.open(mailtoLink, '_blank');
+    window.location.href = mailtoLink;
     
     toast({
       title: "Opening email client...",
@@ -38,7 +38,7 @@ const Contact = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 max-w-3xl relative z-10">
-        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-12 text-left">
+        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
           Let's Collaborate!
         </h2>
         
@@ -124,6 +124,16 @@ const Contact = () => {
           >
             <a href="https://www.linkedin.com/in/vandana-mansur/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="w-5 h-5" />
+            </a>
+          </Button>
+          <Button 
+            variant="outline" 
+            size="icon"
+            className="rounded-full h-12 w-12 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2"
+            asChild
+          >
+            <a href="https://app.joinhandshake.com/profiles/vandana-mansur" target="_blank" rel="noopener noreferrer" aria-label="Handshake">
+              <Handshake className="w-5 h-5" />
             </a>
           </Button>
           <Button 

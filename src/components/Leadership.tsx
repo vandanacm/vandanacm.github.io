@@ -72,23 +72,30 @@ const volunteerActivities = [
   {
     title: "Graduate Student Member",
     organization: "Club of Female Electrical Engineers, UC Davis",
-    period: "2025",
+    period: "2025-2027",
     description: "Active member contributing to diversity and inclusion in electrical engineering",
     icon: Users
   },
   {
     title: "Graduate Student Member",
     organization: "IEEE, UC Davis",
-    period: "2025",
+    period: "2025-2027",
     description: "Active member contributing to science and technology initiatives. Mentoring undergraduate students in their assignments, projects and workshops",
     icon: Award
   },
   {
     title: "Graduate Student Member",
     organization: "Graduate Student Association, UC Davis",
-    period: "2025",
+    period: "2025-2027",
     description: "Engaged in graduate student community and advocacy",
     icon: GraduationCap
+  },
+  {
+    title: "Sales Team Member",
+    organization: "Riviera, VIT",
+    period: "2019-2020",
+    description: "Worked in sales team for proshows tickets at Riviera, the Annual International Sports and Cultural Carnival of VIT Vellore - a 4-day international event with 30,000+ attendees from 650+ colleges",
+    icon: Megaphone
   },
   {
     title: "Student Teaching Assistant",
@@ -106,9 +113,9 @@ const volunteerActivities = [
   },
   {
     title: "Student Volunteer",
-    organization: "Vellore Institute of Technology",
+    organization: "VIT - IUPUI",
     period: "2019",
-    description: "Organized 2nd World Summit on Advances in Sciences, Engineering, and Technology at Indiana University-Purdue University (IUPUI), Indianapolis, USA",
+    description: "Volunteered at the 2nd World Summit on Advances in Sciences, Engineering, and Technology at Indiana University-Purdue University (IUPUI), Indianapolis, USA",
     icon: Globe
   },
   {
