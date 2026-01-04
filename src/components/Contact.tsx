@@ -5,6 +5,9 @@ import { Label } from "@/components/ui/label";
 import { Github, Linkedin, Send, Handshake } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import researchGateLogo from "@/assets/logo-researchgate.png";
+import googleScholarLogo from "@/assets/logo-google-scholar.png";
+import orcidLogo from "@/assets/logo-orcid.png";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -38,9 +41,10 @@ const Contact = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
       
       <div className="container mx-auto px-4 max-w-3xl relative z-10">
-        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-12 text-center">
+        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
           Let's Collaborate!
         </h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-12" />
         
         <form onSubmit={handleSubmit} className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -105,7 +109,7 @@ const Contact = () => {
           </Button>
         </form>
 
-        <div className="flex justify-center gap-4 mt-12">
+        <div className="flex justify-center gap-4 mt-12 flex-wrap">
           <Button 
             variant="outline" 
             size="icon"
@@ -144,6 +148,36 @@ const Contact = () => {
           >
             <a href="https://medium.com/@vandanacmansur" target="_blank" rel="noopener noreferrer" aria-label="Medium">
               <span className="text-lg font-bold">M</span>
+            </a>
+          </Button>
+          <Button 
+            variant="outline" 
+            size="icon"
+            className="rounded-full h-12 w-12 hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2 overflow-hidden p-0"
+            asChild
+          >
+            <a href="https://scholar.google.com/citations?user=HisA-Z8AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+              <img src={googleScholarLogo} alt="Google Scholar" className="w-8 h-8 object-contain" />
+            </a>
+          </Button>
+          <Button 
+            variant="outline" 
+            size="icon"
+            className="rounded-full h-12 w-12 hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2 overflow-hidden p-0"
+            asChild
+          >
+            <a href="https://www.researchgate.net/profile/Vandana-Mansur" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">
+              <img src={researchGateLogo} alt="ResearchGate" className="w-full h-full object-cover" />
+            </a>
+          </Button>
+          <Button 
+            variant="outline" 
+            size="icon"
+            className="rounded-full h-12 w-12 hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2 overflow-hidden p-0"
+            asChild
+          >
+            <a href="https://orcid.org/0000-0002-8438-5475" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+              <img src={orcidLogo} alt="ORCID" className="w-full h-full object-cover" />
             </a>
           </Button>
         </div>
