@@ -13,9 +13,17 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-16">
-          {/* Left side - Text content */}
-          <div className="text-center md:text-left">
+        <div className="flex flex-col items-center justify-center gap-8">
+          {/* Profile Picture */}
+          <div className="flex-shrink-0 animate-slide-up">
+            <Avatar className="w-64 h-64 border-4 border-primary/30 shadow-elegant bg-black">
+              <AvatarImage src={profilePic} alt="Vandana" className="mix-blend-normal" loading="eager" />
+              <AvatarFallback className="text-4xl font-bold bg-black text-primary">V</AvatarFallback>
+            </Avatar>
+          </div>
+          
+          {/* Text content */}
+          <div className="text-center">
             <div className="animate-fade-in">
               <h1 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6">
                 <span className="inline-block">
@@ -24,22 +32,22 @@ const Hero = () => {
                 </span>
               </h1>
             </div>
-            <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-2 max-w-2xl animate-fade-in opacity-0" style={{ animationDelay: '1.8s', animationFillMode: 'forwards' }}>
+            <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-2 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '1.8s', animationFillMode: 'forwards' }}>
               AI/ML Enthusiast & <span className="text-primary">Full Stack Engineer</span>
             </p>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl animate-fade-in opacity-0 font-light" style={{ animationDelay: '2s', animationFillMode: 'forwards' }}>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl mx-auto animate-fade-in opacity-0 font-light" style={{ animationDelay: '2s', animationFillMode: 'forwards' }}>
               MS in ECE @ UC Davis
             </p>
-            <p className="text-lg md:text-xl text-muted-foreground/80 mb-4 max-w-2xl animate-fade-in opacity-0 font-light" style={{ animationDelay: '2.2s', animationFillMode: 'forwards' }}>
+            <p className="text-lg md:text-xl text-muted-foreground/80 mb-4 max-w-2xl mx-auto animate-fade-in opacity-0 font-light" style={{ animationDelay: '2.2s', animationFillMode: 'forwards' }}>
               Building intelligent systems with AI and scalable cloud architecture
             </p>
-            <p className="text-lg md:text-xl text-primary font-medium mb-2 max-w-2xl animate-fade-in opacity-0" style={{ animationDelay: '2.4s', animationFillMode: 'forwards' }}>
+            <p className="text-lg md:text-xl text-primary font-medium mb-2 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '2.4s', animationFillMode: 'forwards' }}>
               Actively looking for Summer'26 Internships!
             </p>
-            <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl animate-fade-in opacity-0" style={{ animationDelay: '2.6s', animationFillMode: 'forwards' }}>
+            <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '2.6s', animationFillMode: 'forwards' }}>
               Graduation Date: March 2027 (Expected) | Open to Relocation
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <Button 
                 size="lg" 
                 onClick={scrollToProjects}
@@ -57,14 +65,6 @@ const Hero = () => {
                 Get In Touch
               </Button>
             </div>
-          </div>
-          
-          {/* Right side - Profile Picture */}
-          <div className="flex-shrink-0 animate-slide-up">
-            <Avatar className="w-64 h-64 border-4 border-primary/30 shadow-elegant bg-black">
-              <AvatarImage src={profilePic} alt="Vandana" className="mix-blend-normal" loading="eager" />
-              <AvatarFallback className="text-4xl font-bold bg-black text-primary">V</AvatarFallback>
-            </Avatar>
           </div>
         </div>
       </div>
