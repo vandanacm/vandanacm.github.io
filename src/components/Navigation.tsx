@@ -69,12 +69,9 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <h1 className="font-sans text-2xl font-bold text-foreground animate-fade-in">
+          <h1 className="font-sans text-xl font-bold text-foreground animate-fade-in">
             <span className="relative inline-flex items-center">
-              <span className="tracking-widest">
-                <span className="text-primary">V</span>
-                <span className="text-primary/60">M</span>
-              </span>
+              <span className="text-primary">Vandana Mansur</span>
               <span className="absolute -inset-1 bg-primary/20 rounded-lg blur-sm animate-pulse-subtle -z-10" />
             </span>
           </h1>
