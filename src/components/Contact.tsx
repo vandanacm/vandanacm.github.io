@@ -2,12 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Github, Linkedin, Send, Handshake } from "lucide-react";
+import { Github, Linkedin, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import researchGateLogo from "@/assets/logo-researchgate.png";
 import googleScholarLogo from "@/assets/logo-google-scholar.png";
 import orcidLogo from "@/assets/logo-orcid.png";
+import handshakeLogo from "@/assets/logo-handshake.png";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -133,11 +134,11 @@ const Contact = () => {
           <Button 
             variant="outline" 
             size="icon"
-            className="rounded-full h-12 w-12 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2"
+            className="rounded-full h-12 w-12 hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2 overflow-hidden p-0"
             asChild
           >
             <a href="https://app.joinhandshake.com/profiles/vandana-mansur" target="_blank" rel="noopener noreferrer" aria-label="Handshake">
-              <Handshake className="w-5 h-5" />
+              <img src={handshakeLogo} alt="Handshake" className="w-full h-full object-cover" />
             </a>
           </Button>
           <Button 
