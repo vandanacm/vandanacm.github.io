@@ -2,13 +2,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Github, Linkedin, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import researchGateLogo from "@/assets/logo-researchgate.png";
 import googleScholarLogo from "@/assets/logo-google-scholar.png";
 import orcidLogo from "@/assets/logo-orcid.png";
 import handshakeLogo from "@/assets/logo-handshake.png";
+import githubLogo from "@/assets/logo-github.png";
+import linkedinLogo from "@/assets/logo-linkedin.png";
+import mediumLogo from "@/assets/logo-medium.png";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -114,21 +117,21 @@ const Contact = () => {
           <Button 
             variant="outline" 
             size="icon"
-            className="rounded-full h-12 w-12 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2"
+            className="rounded-full h-12 w-12 hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2 overflow-hidden p-0"
             asChild
           >
             <a href="https://github.com/vandanacm/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <Github className="w-5 h-5" />
+              <img src={githubLogo} alt="GitHub" className="w-full h-full object-cover" />
             </a>
           </Button>
           <Button 
             variant="outline" 
             size="icon"
-            className="rounded-full h-12 w-12 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2"
+            className="rounded-full h-12 w-12 hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2 overflow-hidden p-0"
             asChild
           >
             <a href="https://www.linkedin.com/in/vandana-mansur/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <Linkedin className="w-5 h-5" />
+              <img src={linkedinLogo} alt="LinkedIn" className="w-full h-full object-cover" />
             </a>
           </Button>
           <Button 
@@ -144,11 +147,11 @@ const Contact = () => {
           <Button 
             variant="outline" 
             size="icon"
-            className="rounded-full h-12 w-12 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2"
+            className="rounded-full h-12 w-12 hover:scale-110 hover:shadow-tech-glow transition-all duration-300 border-2 overflow-hidden p-0"
             asChild
           >
             <a href="https://medium.com/@vandanacmansur" target="_blank" rel="noopener noreferrer" aria-label="Medium">
-              <span className="text-lg font-bold">M</span>
+              <img src={mediumLogo} alt="Medium" className="w-full h-full object-cover" />
             </a>
           </Button>
           <Button 
