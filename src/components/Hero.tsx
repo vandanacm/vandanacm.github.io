@@ -28,7 +28,11 @@ const Hero = () => {
               <h1 className="font-sans text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-6">
                 <span className="inline-block">
                   <TypeWriter text="Hey, I'm " speed={60} delay={300} />
-                  <TypeWriter text="Vandana!" speed={80} delay={800} className="text-primary" />
+                </span>
+                <span className="inline-block">
+                  <span className="animate-text-shimmer bg-gradient-to-r from-primary via-primary/60 to-primary bg-[length:200%_100%] bg-clip-text text-transparent">
+                    <TypeWriter text="Vandana Mansur!" speed={80} delay={800} />
+                  </span>
                 </span>
               </h1>
             </div>
