@@ -46,6 +46,7 @@ const education = [
     location: "Davis, California",
     degree: "Master of Science, Electrical and Computer Engineering (ML Track)",
     period: "2025 - Present",
+    gpa: "4.0/4.0",
     logo: logoUCDavis,
     coursework: ["Big Data & High Performance Statistical Computing", "Modeling & Optimization in Computer Engineering"],
     activities: ["Club of Female Electrical Engineers", "IEEE", "Graduate Student Association"],
@@ -164,6 +165,7 @@ const Experience = () => {
                             <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{edu.school}</CardTitle>
                             <CardDescription className="text-base font-medium mt-1">
                               {edu.degree}
+                              {edu.gpa && <span className="ml-2 text-primary font-semibold">| GPA: {edu.gpa}</span>}
                             </CardDescription>
                           </div>
                           <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{edu.period}</Badge>
@@ -175,7 +177,7 @@ const Experience = () => {
                   <CardContent>
                     {edu.coursework && (
                       <div className="mb-4">
-                        <h4 className="text-sm font-semibold text-foreground mb-2">Relevant Coursework:</h4>
+                        <h4 className="text-sm font-semibold text-foreground mb-2">Selected Coursework:</h4>
                         <ul className="space-y-1">
                           {edu.coursework.map((course, i) => (
                             <li key={i} className="flex gap-2 text-sm text-muted-foreground">
