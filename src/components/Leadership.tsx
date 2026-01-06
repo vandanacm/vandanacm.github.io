@@ -10,7 +10,7 @@ import logoIeeeMtts from "@/assets/logo-ieee-mtts.png";
 import logoIothinc from "@/assets/logo-iothinc.webp";
 import logoNeo from "@/assets/logo-neo.jpeg";
 import logoOptum from "@/assets/logo-optum.png";
-import logoIeeeUcdavis from "@/assets/logo-ieee-ucdavis.jpeg";
+import logoIeeeUcdavis from "@/assets/logo-ieee-ucdavis.png";
 import logoGsa from "@/assets/logo-gsa.png";
 import logoRiviera from "@/assets/logo-riviera.jpeg";
 import logoIupui from "@/assets/logo-iupui.jpeg";
