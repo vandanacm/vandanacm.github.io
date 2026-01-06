@@ -182,7 +182,7 @@ const Leadership = () => {
       >
         <CardHeader>
           <div className="flex justify-between items-start mb-2">
-            <div className="w-12 h-12 rounded-lg bg-background/80 flex items-center justify-center overflow-hidden border border-border/50 group-hover:border-primary/30 transition-colors duration-300">
+            <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center overflow-hidden border border-border/50 group-hover:border-primary/30 transition-colors duration-300">
               {item.logo ? (
                 <img 
                   src={item.logo} 
