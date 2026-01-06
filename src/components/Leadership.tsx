@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Heart, Plane, Shield, FileSearch } from "lucide-react";
+import { Users, Heart } from "lucide-react";
 
 // Import logos
 import logoAyuda from "@/assets/logo-ayuda.jpeg";
@@ -15,6 +15,14 @@ import logoGsa from "@/assets/logo-gsa.png";
 import logoRiviera from "@/assets/logo-riviera.jpeg";
 import logoIupui from "@/assets/logo-iupui.jpeg";
 import logoVit from "@/assets/logo-vit.png";
+import logoCoffee from "@/assets/logo-coffee.jpeg";
+import logoIeee from "@/assets/logo-ieee.png";
+import logoCisco from "@/assets/logo-cisco.jpeg";
+import logoSocial from "@/assets/logo-social.png";
+import logoAsianJournal from "@/assets/logo-asian-journal.jpeg";
+import logoGive from "@/assets/logo-give.jpg";
+import logoCurtiss from "@/assets/logo-curtiss.jpeg";
+import logoVitSeal from "@/assets/logo-vit-seal.png";
 
 interface RoleItem {
   title: string;
@@ -38,7 +46,7 @@ const leadershipRoles: RoleItem[] = [
     organization: "SENSE School, VIT",
     period: "2019-2022",
     description: "Collaboration under the guidance of Professor R. Sujatha in the areas of Blockchain, Internet of Things, Deep Learning, Image processing, and Healthcare Systems",
-    logo: logoVit
+    logo: logoVitSeal
   },
   {
     title: "Founding Member & Head of Public Relations",
@@ -59,7 +67,7 @@ const leadershipRoles: RoleItem[] = [
     organization: "Team Curtiss R/C, SAE-VIT",
     period: "2019-2021",
     description: "Documented team's work and budget, participated in technical discussions, managed raw materials requirements and raised sponsorships",
-    icon: Plane
+    logo: logoCurtiss
   },
   {
     title: "Technical Team Member",
@@ -87,24 +95,24 @@ const leadershipRoles: RoleItem[] = [
 const volunteerActivities: RoleItem[] = [
   {
     title: "Community Volunteer",
-    organization: "Optum",
+    organization: "Optum GIVE",
     period: "2022-2025",
     description: "Volunteered with G.I.V.E and UCARE-Hyderabad events, organized events for school children, fostered educational opportunities and community engagement",
-    logo: logoOptum
+    logo: logoGive
   },
   {
     title: "Graduate Student Member",
     organization: "Club of Female Electrical Engineers, UC Davis",
     period: "2025-2027",
     description: "Active member contributing to diversity and inclusion in electrical engineering",
-    logo: logoIeeeUcdavis
+    logo: logoCoffee
   },
   {
     title: "Graduate Student Member",
     organization: "IEEE, UC Davis",
     period: "2025-2027",
     description: "Active member contributing to science and technology initiatives. Mentoring undergraduate students in their assignments, projects and workshops",
-    logo: logoIeeeUcdavis
+    logo: logoIeee
   },
   {
     title: "Graduate Student Member",
@@ -132,7 +140,7 @@ const volunteerActivities: RoleItem[] = [
     organization: "Ayuda NGO",
     period: "2019-2020",
     description: "Coordinator of Social Entrepreneurship Event and Ayuda Stall Coordinator at Riviera'20",
-    logo: logoAyuda
+    logo: logoSocial
   },
   {
     title: "Student Volunteer",
@@ -146,21 +154,21 @@ const volunteerActivities: RoleItem[] = [
     organization: "Cisco BOOST Program - Women in Cybersecurity",
     period: "2021",
     description: "Participated in Cisco Women in Cybersecurity mentorship program",
-    icon: Shield
+    logo: logoCisco
   },
   {
     title: "Reviewer",
     organization: "Asian Journal of Research in Computer Science",
     period: "2020-2021",
     description: "Reviewed research papers on IoT and Blockchain",
-    icon: FileSearch
+    logo: logoAsianJournal
   },
   {
     title: "Student Member",
     organization: "IEEE",
     period: "2019-Present",
     description: "Active member contributing to science and technology initiatives",
-    logo: logoIeeeUcdavis
+    logo: logoIeee
   }
 ];
 
