@@ -16,7 +16,7 @@ const skills = [
   {
     icon: Globe,
     title: "Cloud & DevOps",
-    description: "AWS EKS, S3, ASM, CloudFront, Azure, Docker, Kubernetes, Terraform, API Gateway, CI/CD",
+    description: "Docker, Kubernetes, Terraform, API Gateway, CI/CD, ArgoCD, Github Actions, AWS EKS, S3, ASM, CloudFront, Azure, Grafana, Splunk, Datadog",
   },
   {
     icon: Smartphone,
