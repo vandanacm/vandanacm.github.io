@@ -31,6 +31,7 @@ interface RoleItem {
   description: string;
   logo?: string;
   icon?: React.ComponentType<{ className?: string }>;
+  fitContain?: boolean;
 }
 
 const leadershipRoles: RoleItem[] = [
@@ -46,7 +47,8 @@ const leadershipRoles: RoleItem[] = [
     organization: "SENSE School, VIT",
     period: "2019-2022",
     description: "Collaboration under the guidance of Professor R. Sujatha in the areas of Blockchain, Internet of Things, Deep Learning, Image processing, and Healthcare Systems",
-    logo: logoVitSeal
+    logo: logoVitSeal,
+    fitContain: true
   },
   {
     title: "Founding Member & Head of Public Relations",
@@ -81,7 +83,8 @@ const leadershipRoles: RoleItem[] = [
     organization: "IoThinc Club, VIT",
     period: "2019-2021",
     description: "Built IoT projects and wrote blogs on blockchain, crypto, and IoT",
-    logo: logoIothinc
+    logo: logoIothinc,
+    fitContain: true
   },
   {
     title: "Campus Coordinator",
@@ -119,7 +122,8 @@ const volunteerActivities: RoleItem[] = [
     organization: "Graduate Student Association, UC Davis",
     period: "2025-2027",
     description: "Engaged in graduate student community and advocacy",
-    logo: logoGsa
+    logo: logoGsa,
+    fitContain: true
   },
   {
     title: "Sales Team Member",
@@ -140,7 +144,8 @@ const volunteerActivities: RoleItem[] = [
     organization: "Ayuda NGO",
     period: "2019-2020",
     description: "Coordinator of Social Entrepreneurship Event and Ayuda Stall Coordinator at Riviera'20",
-    logo: logoSocial
+    logo: logoSocial,
+    fitContain: true
   },
   {
     title: "Student Volunteer",
@@ -187,7 +192,7 @@ const Leadership = () => {
                 <img 
                   src={item.logo} 
                   alt={item.organization} 
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full ${item.fitContain ? 'object-contain p-1' : 'object-cover'}`}
                 />
               ) : item.icon ? (
                 <item.icon className="w-6 h-6 text-primary" />
