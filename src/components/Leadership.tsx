@@ -20,7 +20,7 @@ import logoIeee from "@/assets/logo-ieee.png";
 import logoCisco from "@/assets/logo-cisco.jpeg";
 import logoSocial from "@/assets/logo-social.png";
 import logoAsianJournal from "@/assets/logo-asian-journal.jpeg";
-import logoGive from "@/assets/logo-give.jpg";
+import logoOptumGive from "@/assets/logo-optum-give.png";
 import logoCurtiss from "@/assets/logo-curtiss.jpeg";
 import logoVitSeal from "@/assets/logo-vit-seal.png";
 
@@ -98,7 +98,7 @@ const volunteerActivities: RoleItem[] = [
     organization: "Optum GIVE",
     period: "2022-2025",
     description: "Volunteered with G.I.V.E and UCARE-Hyderabad events, organized events for school children, fostered educational opportunities and community engagement",
-    logo: logoGive
+    logo: logoOptumGive
   },
   {
     title: "Graduate Student Member",
