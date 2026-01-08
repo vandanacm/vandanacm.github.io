@@ -10,7 +10,7 @@ import logoIeeeMtts from "@/assets/logo-ieee-mtts.png";
 import logoIothinc from "@/assets/logo-iothinc.webp";
 import logoNeo from "@/assets/logo-neo.jpeg";
 import logoOptum from "@/assets/logo-optum.png";
-import logoIeeeUcdavis from "@/assets/logo-ieee-ucdavis.png";
+import logoIeeeUcdavis from "@/assets/logo-ieee-ucdavis-new.jpeg";
 import logoGsa from "@/assets/logo-gsa.png";
 import logoRiviera from "@/assets/logo-riviera.jpeg";
 import logoIupui from "@/assets/logo-iupui.jpeg";
@@ -112,7 +112,7 @@ const volunteerActivities: RoleItem[] = [
     organization: "IEEE, UC Davis",
     period: "2025-2027",
     description: "Active member contributing to science and technology initiatives. Mentoring undergraduate students in their assignments, projects and workshops",
-    logo: logoIeee
+    logo: logoIeeeUcdavis
   },
   {
     title: "Graduate Student Member",
