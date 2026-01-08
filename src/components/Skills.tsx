@@ -11,7 +11,7 @@ const skills = [
   {
     icon: Palette,
     title: "Full-Stack Development",
-    description: "React, Next.js, Java, Springboot, Python, GraphQL, REST APIs",
+    description: "Java, Springboot, GraphQL, REST APIs, Microservices, Maven, Gradle, Spring AI, React, Next.js",
   },
   {
     icon: Globe,
