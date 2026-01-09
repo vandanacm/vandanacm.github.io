@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Briefcase, GraduationCap } from "lucide-react";
 import { useRef, useEffect, useState } from "react";
 import logoOptum from "@/assets/logo-optum.png";
-import logoUCDavis from "@/assets/logo-ucdavis.png";
+import logoUCDavis from "@/assets/logo-ucdavis-new.png";
 import logoVIT from "@/assets/logo-vit.png";
 
 const experiences = [
@@ -56,6 +56,7 @@ const education = [
     location: "Vellore, India",
     degree: "Bachelor of Technology, Electronics & Communication Engineering",
     period: "2018 - 2022",
+    gpa: "8.85/10.0",
     logo: logoVIT,
     activities: ["Undergraduate Researcher", "Chairperson of Ayuda NGO", "Technical Team Member of IEEE-MTTS", "IoThinc", "Founding Member & Head of Public Relations, Digit Squad-VIT", "Documentation Head of Curtiss R/C, SAE-VIT", "Chairperson of KLA", "Stalls Coordinator - Ayuda, Riviera 2020", "Sales Team, Riviera 2020"],
   },
