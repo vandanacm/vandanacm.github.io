@@ -45,7 +45,7 @@ const education = [
     school: "University of California, Davis",
     location: "Davis, California",
     degree: "Master of Science, Electrical and Computer Engineering (ML Track)",
-    period: "2025 - Present",
+    period: "2025 - 2026",
     gpa: "4.0/4.0",
     logo: logoUCDavis,
     coursework: ["Unsupervised Learning", "Co-Design of Hardware & Algorithms for AI/ML", "Introduction to Neuroengineering", "Big Data & High Performance Statistical Computing", "Modeling & Optimization in Computer Engineering"],
