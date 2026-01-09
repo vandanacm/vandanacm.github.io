@@ -6,7 +6,7 @@ const skills = [
   {
     icon: Code2,
     title: "AI/ML Engineering",
-    description: "Python, PyTorch, NLTK, Hugging Face, NumPy, Pandas, RAG, LangChain, Machine Learning, NLP, Large Language Models (LLMs), Multimodal Model, Agentic AI, Prompt Engineering",
+    description: "Python, PyTorch, NLTK, Hugging Face, NumPy, Pandas, RAG, LangChain, Machine Learning, NLP, Large Language Models (LLMs), Multimodal Model, Agentic AI, Prompt Engineering, Gen AI Tools",
   },
   {
     icon: Palette,
