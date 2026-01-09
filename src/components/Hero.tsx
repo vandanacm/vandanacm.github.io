@@ -45,7 +45,7 @@ const Hero = () => {
               Actively looking for Summer'26 Internships!
             </p>
             <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '2.6s', animationFillMode: 'forwards' }}>
-              Graduation Date: March 2027 (Expected) | Open to Relocation
+              Graduation Date: December 2026 (Expected) | Open to Relocation
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <Button 
