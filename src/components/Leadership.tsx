@@ -171,7 +171,7 @@ const volunteerActivities: RoleItem[] = [
   {
     title: "Student Member",
     organization: "IEEE",
-    period: "2019-Present",
+    period: "2019-2022",
     description: "Active member contributing to science and technology initiatives",
     logo: logoIeee
   }
