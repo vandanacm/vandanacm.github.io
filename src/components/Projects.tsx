@@ -19,7 +19,8 @@ const projects = [
     description: "Engineered Arome for L'Oréal Brandstorm 2026 — a full-stack AI chatbot that translates user memories into personalized luxury fragrance blueprints using a hybrid GraphRAG + LLM pipeline built on Neo4j, Weaviate, FastAPI, and Redis. Designed brand-agnostic architecture targeting the €7.5B exception fragrance market, with inline safety guardrails ensuring no medical or therapeutic claims reach consumer-facing output.",
     image: aromeImg,
     tags: ["GraphRAG", "Neo4j", "Weaviate", "FastAPI", "Redis", "LLM"],
-    year: "2026"
+    year: "2026",
+    githubUrl: "https://github.com/vandanacm/memoire-de-parfum"
   },
   {
     title: "Unsupervised Music Representation Learning with β-VAE",
@@ -33,21 +34,24 @@ const projects = [
     description: "End-to-end resume classification model using DistilBERT transformer, comparing performance against traditional ML models including SVM, XGBoost, and Naive Bayes for automated resume categorization",
     image: resumeClassifierImg,
     tags: ["DistilBERT", "NLP", "SVM", "XGBoost", "Python"],
-    year: "2025"
+    year: "2025",
+    githubUrl: "https://github.com/vandanacm/resume-classifier"
   },
   {
     title: "Hospital Patient Flow Optimization",
     description: "Applied Flexible Job Shop Scheduling Problem (FJSP) framework with MILP optimization for hospital patient processing. Achieved 16.9% improvement over unscheduled operations and outperformed genetic algorithm approaches",
     image: hospitalSchedulingImg,
     tags: ["MILP", "Optimization", "Healthcare", "Python"],
-    year: "2025"
+    year: "2025",
+    githubUrl: "https://github.com/vandanacm/fjsp-patient-processing"
   },
   {
     title: "Clinical Intelligent System",
     description: "RAG-based clinical Q&A system using OpenAI GPT-4o mini with ChromaDB vector database for semantic search, delivering factually accurate medical responses",
     image: clinicalAiImg,
     tags: ["OpenAI", "RAG", "ChromaDB", "Python"],
-    year: "2025"
+    year: "2025",
+    githubUrl: "https://github.com/vandanacm/rag-clinical-qa-system"
   },
   {
     title: "SQLbot - NLP to SQL Converter",
@@ -62,7 +66,8 @@ const projects = [
     image: medicalChainImg,
     tags: ["Blockchain", "Deep Learning", "IPFS", "React"],
     year: "2022",
-    demoUrl: "https://vimeo.com/705705822"
+    demoUrl: "https://vimeo.com/705705822",
+    githubUrl: "https://github.com/vandanacm/medical-chain-final"
   },
   {
     title: "Automatic Colorization Using Auto-Encoders",
@@ -93,7 +98,6 @@ const projects = [
     year: "2020"
   },
 ];
-
 const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-gradient-subtle">
@@ -128,10 +132,14 @@ const Projects = () => {
                       </a>
                     </Button>
                   )}
-                  <Button size="sm" variant="secondary" className="shadow-lg">
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </Button>
+                  {project.githubUrl && (
+                    <Button size="sm" variant="secondary" className="shadow-lg" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
               <CardHeader>
