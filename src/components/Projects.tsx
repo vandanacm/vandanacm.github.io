@@ -93,4 +93,72 @@ const projects = [
     year: "2020"
   },
 ];
+
+const Projects = () => {
+  return (
+    <section id="projects" className="py-20 bg-gradient-subtle">
+      <div className="container mx-auto px-4">
+        <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
+          Featured Projects
+        </h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-2" />
+        <p className="text-center text-foreground/70 mb-12 text-lg">
+          A selection of my recent work
+        </p>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <Card 
+              key={index}
+              className="group overflow-hidden hover:shadow-hover transition-all duration-500 hover:-translate-y-2 border-border bg-gradient-card backdrop-blur-sm"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="relative overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110 group-hover:rotate-1"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-4 gap-2">
+                  {project.demoUrl && (
+                    <Button size="sm" variant="secondary" className="shadow-lg" asChild>
+                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Demo
+                      </a>
+                    </Button>
+                  )}
+                  <Button size="sm" variant="secondary" className="shadow-lg">
+                    <Github className="w-4 h-4 mr-2" />
+                    Code
+                  </Button>
+                </div>
+              </div>
+              <CardHeader>
+                <div className="flex items-start justify-between mb-2">
+                  <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{project.title}</CardTitle>
+                  <span className="text-xs text-muted-foreground font-medium px-2 py-1 bg-secondary/50 rounded-md">{project.year}</span>
+                </div>
+                <CardDescription className="text-sm leading-relaxed">{project.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span 
+                      key={tagIndex}
+                      className="px-3 py-1 text-xs font-medium bg-primary/5 text-primary border border-primary/20 rounded-full hover:bg-primary/10 transition-colors duration-300"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default Projects;
