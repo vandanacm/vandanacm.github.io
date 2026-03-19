@@ -121,7 +121,7 @@ const Projects = () => {
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className={`w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110 group-hover:rotate-1 ${project.title.includes("Arome") ? "scale-[2] object-[center_30%]" : ""}`}
+                  className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110 group-hover:rotate-1"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end justify-center pb-4 gap-2">
                   {project.demoUrl && (
