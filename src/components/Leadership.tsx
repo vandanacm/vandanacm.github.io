@@ -102,7 +102,7 @@ const volunteerActivities: RoleItem[] = [
     organization: "UC Davis Health - Brains to Classrooms",
     period: "2026",
     description: "The Brains to Classrooms program reached over 90 elementary school students, focusing on lessons about how to protect the brain and why animals have different types of brains",
-    logo: logoIeeeUcdavis,
+    logo: logoUcdavis,
     fitContain: true
   },
   {
