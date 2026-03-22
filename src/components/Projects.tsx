@@ -67,14 +67,6 @@ const projects = [
     tags: ["Blockchain", "Deep Learning", "IPFS", "React"],
     year: "2022",
     demoUrl: "https://vimeo.com/705705822",
-    githubUrl: "https://github.com/vandanacm/medical-chain-final"
-  },
-  {
-    title: "Automatic Colorization Using Auto-Encoders",
-    description: "Designed an Autoencoder model for the conversion of black and white images to colored images without human intervention. Feed-forward pass to CNN implemented using Cifar10 dataset",
-    image: colorizationImg,
-    tags: ["AutoEncoder", "CNN", "Deep Learning", "Python"],
-    year: "2021"
   },
   {
     title: "Highway Drowsiness Detection",
