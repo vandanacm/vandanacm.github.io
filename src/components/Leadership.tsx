@@ -97,6 +97,14 @@ const leadershipRoles: RoleItem[] = [
 
 const volunteerActivities: RoleItem[] = [
   {
+    title: "Graduate Student Volunteer",
+    organization: "UC Davis Health - Brains to Classrooms",
+    period: "2026",
+    description: "The Brains to Classrooms program reached over 90 elementary school students, focusing on lessons about how to protect the brain and why animals have different types of brains",
+    logo: logoIeeeUcdavis,
+    fitContain: true
+  },
+  {
     title: "Community Volunteer",
     organization: "Optum GIVE",
     period: "2022-2025",
