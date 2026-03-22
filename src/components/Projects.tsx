@@ -6,7 +6,7 @@ import musicVaeImg from "@/assets/project-music-vae.jpg";
 import clinicalAiImg from "@/assets/project-clinical-ai.jpg";
 import sqlbotImg from "@/assets/project-sqlbot.jpg";
 import medicalChainImg from "@/assets/project-medical-chain.jpg";
-import colorizationImg from "@/assets/project-colorization.jpg";
+
 import drowsinessImg from "@/assets/project-drowsiness.jpg";
 import arteasyImg from "@/assets/project-arteasy.jpg";
 import intruderReidImg from "@/assets/project-intruder-reid.jpg";
