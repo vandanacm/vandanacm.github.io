@@ -23,11 +23,12 @@ const projects = [
     githubUrl: "https://github.com/vandanacm/memoire-de-parfum"
   },
   {
-    title: "Unsupervised Music Representation Learning with β-VAE",
+    title: "Unheard Patterns",
     description: "Developed an unsupervised β-VAE system for music representation learning, compressing mel spectrograms into a structured 128-dim latent space that reveals genre clusters without any label supervision (GMM NMI = 0.28). Extended the model with contrastive auxiliary loss, disentanglement scoring, and conditional genre-guided generation as part of a 9-improvement research pipeline.",
     image: musicVaeImg,
     tags: ["β-VAE", "Deep Learning", "Mel Spectrograms", "GMM", "Python"],
-    year: "2026"
+    year: "2026",
+    githubUrl: "https://github.com/lalithadasu/What-a-machine-learns-when-it-listens"
   },
   {
     title: "Resume Classification using DistilBERT",
