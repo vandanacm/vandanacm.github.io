@@ -15,6 +15,7 @@ import logoGsa from "@/assets/logo-gsa.png";
 import logoRiviera from "@/assets/logo-riviera.jpeg";
 import logoIupui from "@/assets/logo-iupui.jpeg";
 import logoVit from "@/assets/logo-vit.png";
+import logoUcdavis from "@/assets/logo-ucdavis-new.png";
 import logoCoffee from "@/assets/logo-coffee.jpeg";
 import logoIeee from "@/assets/logo-ieee.png";
 import logoCisco from "@/assets/logo-cisco.jpeg";
