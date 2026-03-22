@@ -15,6 +15,7 @@ import logoGsa from "@/assets/logo-gsa.png";
 import logoRiviera from "@/assets/logo-riviera.jpeg";
 import logoIupui from "@/assets/logo-iupui.jpeg";
 import logoVit from "@/assets/logo-vit.png";
+import logoUcdavis from "@/assets/logo-ucdavis-new.png";
 import logoCoffee from "@/assets/logo-coffee.jpeg";
 import logoIeee from "@/assets/logo-ieee.png";
 import logoCisco from "@/assets/logo-cisco.jpeg";
@@ -96,6 +97,14 @@ const leadershipRoles: RoleItem[] = [
 ];
 
 const volunteerActivities: RoleItem[] = [
+  {
+    title: "Graduate Student Volunteer",
+    organization: "UC Davis Health - Brains to Classrooms",
+    period: "2026",
+    description: "The Brains to Classrooms program reached over 90 elementary school students, focusing on lessons about how to protect the brain and why animals have different types of brains",
+    logo: logoUcdavis,
+    fitContain: true
+  },
   {
     title: "Community Volunteer",
     organization: "Optum GIVE",
