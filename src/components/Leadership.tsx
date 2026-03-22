@@ -16,6 +16,7 @@ import logoRiviera from "@/assets/logo-riviera.jpeg";
 import logoIupui from "@/assets/logo-iupui.jpeg";
 import logoVit from "@/assets/logo-vit.png";
 import logoUcdavis from "@/assets/logo-ucdavis-new.png";
+import logoUcdavisHealth from "@/assets/logo-ucdavis-health.png";
 import logoCoffee from "@/assets/logo-coffee.jpeg";
 import logoIeee from "@/assets/logo-ieee.png";
 import logoCisco from "@/assets/logo-cisco.jpeg";
@@ -102,7 +103,7 @@ const volunteerActivities: RoleItem[] = [
     organization: "UC Davis Health - Brains to Classrooms",
     period: "2026",
     description: "The Brains to Classrooms program reached over 90 elementary school students, focusing on lessons about how to protect the brain and why animals have different types of brains",
-    logo: logoUcdavis,
+    logo: logoUcdavisHealth,
     fitContain: true
   },
   {
