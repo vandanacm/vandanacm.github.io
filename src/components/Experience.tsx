@@ -60,6 +60,7 @@ const education = [
   },
   {
     school: "Vellore Institute of Technology",
+    schoolUrl: "https://vit.ac.in/",
     location: "Vellore, India",
     degree: "Bachelor of Technology, Electronics & Communication Engineering",
     period: "2018 - 2022",
@@ -180,7 +181,11 @@ const Experience = () => {
                       <div className="flex-1">
                         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
                           <div>
-                            <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{edu.school}</CardTitle>
+                            <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">
+                              {edu.schoolUrl ? (
+                                <a href={edu.schoolUrl} target="_blank" rel="noopener noreferrer" className="no-underline hover:text-primary">{edu.school}</a>
+                              ) : edu.school}
+                            </CardTitle>
                             <CardDescription className="text-base font-medium mt-1">
                               {edu.degree}
                               {edu.gpa && <span className="ml-2 text-primary font-semibold">| GPA: {edu.gpa}</span>}
