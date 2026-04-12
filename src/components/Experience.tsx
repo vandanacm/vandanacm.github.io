@@ -66,7 +66,7 @@ const education = [
     logo: logoVIT,
     activities: [
       { name: "Undergraduate Researcher" },
-      { name: "Chairperson of Ayuda NGO" },
+      { name: "Chairperson of Ayuda NGO", url: "https://ayudango-2021.netlify.app/" },
       { name: "Technical Team Member of IEEE-MTTS" },
       { name: "IoThinc" },
       { name: "Founding Member & Head of Public Relations, Digit Squad-VIT" },
