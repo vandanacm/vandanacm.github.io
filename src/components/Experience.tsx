@@ -49,7 +49,7 @@ const education = [
     period: "2025 - 2026",
     gpa: "4.0/4.0",
     logo: logoUCDavis,
-    coursework: ["Agentic Learning", "Practical AI", "Unsupervised Learning", "Big Data & High Performance for Advanced Statistical Computing", "Visual Analytics", "Modelling & Optimization in Computer Engineering", "Introduction to Neuroengineering"],
+    coursework: ["Agentic Learning", "Practical AI", "Unsupervised Learning", "Big Data & High Performance for Advanced Statistical Computing", "Visual Analytics", "Modelling & Optimization in Computer Engineering", "Introduction to Neuroengineering", "Research in ML/AI"],
     activities: [
       { name: "Club of Female Electrical Engineers" },
       { name: "IEEE" },
