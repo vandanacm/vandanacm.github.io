@@ -214,7 +214,7 @@ const Experience = () => {
                               href={activity.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="px-3 py-1 text-xs bg-primary/5 text-primary border border-primary/20 rounded-full hover:bg-primary/10 transition-colors duration-300 underline decoration-primary/30"
+                              className="px-3 py-1 text-xs bg-primary/5 text-primary border border-primary/20 rounded-full hover:bg-primary/10 transition-colors duration-300 no-underline"
                             >
                               {activity.name}
                             </a>
