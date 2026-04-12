@@ -208,12 +208,24 @@ const Experience = () => {
                     {edu.activities && (
                       <div className="flex flex-wrap gap-2">
                         {edu.activities.map((activity, i) => (
-                          <span 
-                            key={i}
-                            className="px-3 py-1 text-xs bg-primary/5 text-primary border border-primary/20 rounded-full hover:bg-primary/10 transition-colors duration-300"
-                          >
-                            {activity}
-                          </span>
+                          activity.url ? (
+                            <a
+                              key={i}
+                              href={activity.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-3 py-1 text-xs bg-primary/5 text-primary border border-primary/20 rounded-full hover:bg-primary/10 transition-colors duration-300 underline decoration-primary/30"
+                            >
+                              {activity.name}
+                            </a>
+                          ) : (
+                            <span 
+                              key={i}
+                              className="px-3 py-1 text-xs bg-primary/5 text-primary border border-primary/20 rounded-full hover:bg-primary/10 transition-colors duration-300"
+                            >
+                              {activity.name}
+                            </span>
+                          )
                         ))}
                       </div>
                     )}
