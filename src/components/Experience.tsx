@@ -49,7 +49,13 @@ const education = [
     gpa: "4.0/4.0",
     logo: logoUCDavis,
     coursework: ["Agentic Learning", "Practical AI", "Unsupervised Learning", "Big Data & High Performance for Advanced Statistical Computing", "Visual Analytics", "Modelling & Optimization in Computer Engineering", "Introduction to Neuroengineering"],
-    activities: ["Club of Female Electrical Engineers", "IEEE", "Graduate Student Association"],
+    activities: [
+      { name: "Club of Female Electrical Engineers" },
+      { name: "IEEE" },
+      { name: "Graduate Student Association" },
+      { name: "RUbiNet Lab", url: "https://www.ece.ucdavis.edu/~chuah/rubinet/index.html" },
+      { name: "ASEEC Lab" },
+    ],
   },
   {
     school: "Vellore Institute of Technology",
@@ -58,7 +64,17 @@ const education = [
     period: "2018 - 2022",
     gpa: "8.85/10.0",
     logo: logoVIT,
-    activities: ["Undergraduate Researcher", "Chairperson of Ayuda NGO", "Technical Team Member of IEEE-MTTS", "IoThinc", "Founding Member & Head of Public Relations, Digit Squad-VIT", "Documentation Head of Curtiss R/C, SAE-VIT", "Chairperson of KLA", "Stalls Coordinator - Ayuda, Riviera 2020", "Sales Team, Riviera 2020"],
+    activities: [
+      { name: "Undergraduate Researcher" },
+      { name: "Chairperson of Ayuda NGO" },
+      { name: "Technical Team Member of IEEE-MTTS" },
+      { name: "IoThinc" },
+      { name: "Founding Member & Head of Public Relations, Digit Squad-VIT" },
+      { name: "Documentation Head of Curtiss R/C, SAE-VIT" },
+      { name: "Chairperson of KLA" },
+      { name: "Stalls Coordinator - Ayuda, Riviera 2020" },
+      { name: "Sales Team, Riviera 2020" },
+    ],
   },
 ];
 
@@ -192,12 +208,24 @@ const Experience = () => {
                     {edu.activities && (
                       <div className="flex flex-wrap gap-2">
                         {edu.activities.map((activity, i) => (
-                          <span 
-                            key={i}
-                            className="px-3 py-1 text-xs bg-primary/5 text-primary border border-primary/20 rounded-full hover:bg-primary/10 transition-colors duration-300"
-                          >
-                            {activity}
-                          </span>
+                          activity.url ? (
+                            <a
+                              key={i}
+                              href={activity.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-3 py-1 text-xs bg-primary/5 text-primary border border-primary/20 rounded-full hover:bg-primary/10 transition-colors duration-300 underline decoration-primary/30"
+                            >
+                              {activity.name}
+                            </a>
+                          ) : (
+                            <span 
+                              key={i}
+                              className="px-3 py-1 text-xs bg-primary/5 text-primary border border-primary/20 rounded-full hover:bg-primary/10 transition-colors duration-300"
+                            >
+                              {activity.name}
+                            </span>
+                          )
                         ))}
                       </div>
                     )}
