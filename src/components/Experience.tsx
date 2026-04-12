@@ -43,6 +43,7 @@ const experiences = [
 const education = [
   {
     school: "University of California, Davis",
+    schoolUrl: "https://www.ucdavis.edu/",
     location: "Davis, California",
     degree: "Master of Science, Electrical and Computer Engineering (ML Track)",
     period: "2025 - 2026",
