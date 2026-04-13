@@ -40,6 +40,55 @@ const experiences = [
   },
 ];
 
+const internships = [
+  {
+    company: "Vellore Institute of Technology",
+    location: "Vellore, India",
+    role: "Undergraduate Research Assistant",
+    period: "May 2019 – April 2022",
+    logo: logoVIT,
+    achievements: [
+      "Collaborated under the guidance of Professor R. Sujatha in the areas of Blockchain, Internet of Things, Deep Learning, Image Processing, and Healthcare Systems",
+    ],
+  },
+  {
+    company: "50Hands Organization",
+    location: "Canada",
+    role: "Technology Intern",
+    period: "May 2020 – December 2020",
+    achievements: [
+      "Information for Good | Innovation for Good | Humans for Good — 50 Hands intend to use open datasets for HOPE and HELP. A data-driven model to provide actionable insights addressing individual and community needs to overcome the situation",
+    ],
+  },
+  {
+    company: "The Sparks Foundation",
+    location: "Singapore",
+    role: "Data Science Intern",
+    period: "September 2020 – November 2020",
+    achievements: [
+      "Built and fine-tuned machine learning models using Python, working closely with teammates to boost their performance. Gathered big datasets for business needs, performed data analysis, and created visualization dashboards to showcase the results",
+    ],
+  },
+  {
+    company: "Skykrafts Aerospace",
+    location: "Hubli, Karnataka, India",
+    role: "Research Intern",
+    period: "November 2020 – December 2020",
+    achievements: [
+      "Introduced to Interfacing Techniques with NI myRio on LabVIEW and Raspberry Pi",
+    ],
+  },
+  {
+    company: "Bariflo Labs",
+    location: "Vellore, Tamil Nadu, India",
+    role: "Technical Intern",
+    period: "July 2019 – December 2019",
+    achievements: [
+      "Implemented the knowledge of microcontrollers and IoT for measurement, testing, and development of a sensor module for the Control System of Aeration Bot",
+    ],
+  },
+];
+
 const education = [
   {
     school: "University of California, Davis",
