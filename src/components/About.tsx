@@ -12,7 +12,7 @@ const About = () => {
       
       <div className="container mx-auto px-4 max-w-4xl relative z-10">
         <h2 className="font-sans text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
-          About Me
+          What I Build
         </h2>
         <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent mx-auto mb-8" />
         
