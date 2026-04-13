@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap, FlaskConical } from "lucide-react";
 import { useRef, useEffect, useState } from "react";
 import logoOptum from "@/assets/logo-optum.png";
 import logoUCDavis from "@/assets/logo-ucdavis-new.png";
