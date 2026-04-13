@@ -29,6 +29,7 @@ import logoVitSeal from "@/assets/logo-vit-seal.png";
 interface RoleItem {
   title: string;
   organization: string;
+  url?: string;
   period: string;
   description: string;
   logo?: string;
@@ -42,7 +43,8 @@ const leadershipRoles: RoleItem[] = [
     organization: "Ayuda NGO, VIT",
     period: "2020-2021",
     description: "Organized Social Entrepreneurship Event at Riviera 2020 and facilitated educational outreach programs. 'Smile and Spread Smiles' captures my passion for making a positive contribution to society. My experience at 'Ayuda' has convinced me that even the smallest acts of kindness combined with individual efforts can significantly impact anyone in need.",
-    logo: logoAyuda
+    logo: logoAyuda,
+    url: "https://ayudango-2021.netlify.app/"
   },
   {
     title: "Undergraduate Research Assistant",
@@ -214,7 +216,11 @@ const Leadership = () => {
           </div>
           <CardTitle className="text-xl text-card-foreground group-hover:text-primary transition-colors duration-300">{item.title}</CardTitle>
           <CardDescription className="text-base font-medium">
-            {item.organization}
+            {item.url ? (
+              <a href={item.url} target="_blank" rel="noopener noreferrer" className="no-underline hover:text-primary transition-colors">
+                {item.organization}
+              </a>
+            ) : item.organization}
           </CardDescription>
         </CardHeader>
         <CardContent>
