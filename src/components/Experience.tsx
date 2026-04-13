@@ -52,6 +52,13 @@ const internships = [
     ],
   },
   {
+    company: "Ambher",
+    location: "Bengaluru, Karnataka, India",
+    role: "Project Intern",
+    period: "May 2021 – May 2022",
+    achievements: [],
+  },
+  {
     company: "50Hands Organization",
     location: "Canada",
     role: "Technology Intern",
