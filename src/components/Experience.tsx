@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap, FlaskConical } from "lucide-react";
 import { useRef, useEffect, useState } from "react";
 import logoOptum from "@/assets/logo-optum.png";
 import logoUCDavis from "@/assets/logo-ucdavis-new.png";
@@ -36,6 +36,55 @@ const experiences = [
       "Qualified as a top 10 finalist in Home & Community Hackathon 2024",
       "8x Diamond Bravo Recognition for Performance, Innovation, Collaboration and Compassion",
       "Championed team collaboration, mentoring, and technical debt reviews to support ongoing process and product improvement",
+    ],
+  },
+];
+
+const internships = [
+  {
+    company: "Vellore Institute of Technology",
+    location: "Vellore, India",
+    role: "Undergraduate Research Assistant",
+    period: "May 2019 – April 2022",
+    logo: logoVIT,
+    achievements: [
+      "Collaborated under the guidance of Professor R. Sujatha in the areas of Blockchain, Internet of Things, Deep Learning, Image Processing, and Healthcare Systems",
+    ],
+  },
+  {
+    company: "50Hands Organization",
+    location: "Canada",
+    role: "Technology Intern",
+    period: "May 2020 – December 2020",
+    achievements: [
+      "Information for Good | Innovation for Good | Humans for Good — 50 Hands intend to use open datasets for HOPE and HELP. A data-driven model to provide actionable insights addressing individual and community needs to overcome the situation",
+    ],
+  },
+  {
+    company: "The Sparks Foundation",
+    location: "Singapore",
+    role: "Data Science Intern",
+    period: "September 2020 – November 2020",
+    achievements: [
+      "Built and fine-tuned machine learning models using Python, working closely with teammates to boost their performance. Gathered big datasets for business needs, performed data analysis, and created visualization dashboards to showcase the results",
+    ],
+  },
+  {
+    company: "Skykrafts Aerospace",
+    location: "Hubli, Karnataka, India",
+    role: "Research Intern",
+    period: "November 2020 – December 2020",
+    achievements: [
+      "Introduced to Interfacing Techniques with NI myRio on LabVIEW and Raspberry Pi",
+    ],
+  },
+  {
+    company: "Bariflo Labs",
+    location: "Vellore, Tamil Nadu, India",
+    role: "Technical Intern",
+    period: "July 2019 – December 2019",
+    achievements: [
+      "Implemented the knowledge of microcontrollers and IoT for measurement, testing, and development of a sensor module for the Control System of Aeration Bot",
     ],
   },
 ];
@@ -160,7 +209,53 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* Education */}
+          {/* Internships */}
+          <div>
+            <div className="flex items-center gap-2 mb-6">
+              <FlaskConical className="w-6 h-6 text-primary" />
+              <h3 className="font-sans text-2xl font-bold text-foreground">Internships</h3>
+            </div>
+            <div className="space-y-6">
+              {internships.map((intern, index) => (
+                <Card 
+                  key={index}
+                  className="group hover:shadow-hover transition-all duration-500 hover:-translate-y-2 border-border bg-gradient-card backdrop-blur-sm hover:border-primary/20"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardHeader>
+                    <div className="flex items-start gap-4">
+                      {intern.logo && (
+                        <div className="flex-shrink-0 w-28 h-28 bg-background rounded-xl p-3 flex items-center justify-center border border-border shadow-sm">
+                          <img src={intern.logo} alt={intern.company} className="w-full h-full object-contain" />
+                        </div>
+                      )}
+                      <div className="flex-1">
+                        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
+                          <div>
+                            <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{intern.role}</CardTitle>
+                            <CardDescription className="text-base font-medium mt-1">{intern.company}</CardDescription>
+                          </div>
+                          <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{intern.period}</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{intern.location}</p>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2">
+                      {intern.achievements.map((achievement, i) => (
+                        <li key={i} className="flex gap-2 text-muted-foreground">
+                          <span className="text-primary mt-1.5">•</span>
+                          <span>{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
           <div>
             <div className="flex items-center gap-2 mb-6">
               <GraduationCap className="w-6 h-6 text-primary" />
