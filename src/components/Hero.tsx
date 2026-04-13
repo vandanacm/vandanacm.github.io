@@ -33,7 +33,7 @@ const Hero = () => {
               </h1>
             </div>
             <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-2 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '1.8s', animationFillMode: 'forwards' }}>
-              AI/ML Enthusiast & <span className="text-primary">Full Stack Engineer</span>
+              Full Stack <span className="text-primary">AI Engineer</span>
             </p>
             <p className="text-xl md:text-2xl text-muted-foreground mb-2 max-w-2xl mx-auto animate-fade-in opacity-0 font-light" style={{ animationDelay: '2s', animationFillMode: 'forwards' }}>
               MS in ECE @ UC Davis
