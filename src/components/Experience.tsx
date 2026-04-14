@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, GraduationCap, FlaskConical } from "lucide-react";
+import { Briefcase, GraduationCap, FlaskConical, Microscope } from "lucide-react";
 import { useRef, useEffect, useState } from "react";
 import logoOptum from "@/assets/logo-optum.png";
 import logoUCDavis from "@/assets/logo-ucdavis-new.png";
@@ -40,7 +40,7 @@ const experiences = [
   },
 ];
 
-const internships = [
+const researchExperience = [
   {
     company: "Vellore Institute of Technology",
     location: "Vellore, India",
@@ -51,6 +51,9 @@ const internships = [
       "Collaborated under the guidance of Professor R. Sujatha in the areas of Blockchain, Internet of Things, Deep Learning, Image Processing, and Healthcare Systems",
     ],
   },
+];
+
+const internships = [
   {
     company: "Ambher",
     location: "Bengaluru, Karnataka, India",
@@ -82,7 +85,7 @@ const internships = [
     role: "Research Intern",
     period: "November 2020 – December 2020",
     achievements: [
-      "Introduced to Interfacing Techniques with NI myRio on LabVIEW and Raspberry Pi",
+      "Worked on different Interfacing Techniques with NI myRio on LabVIEW and Raspberry Pi",
     ],
   },
   {
@@ -216,6 +219,53 @@ const Experience = () => {
             </div>
           </div>
 
+          {/* Research Experience */}
+          <div>
+            <div className="flex items-center gap-2 mb-6">
+              <Microscope className="w-6 h-6 text-primary" />
+              <h3 className="font-sans text-2xl font-bold text-foreground">Research Experience</h3>
+            </div>
+            <div className="space-y-6">
+              {researchExperience.map((res, index) => (
+                <Card 
+                  key={index}
+                  className="group hover:shadow-hover transition-all duration-500 hover:-translate-y-2 border-border bg-gradient-card backdrop-blur-sm hover:border-primary/20"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardHeader>
+                    <div className="flex items-start gap-4">
+                      {res.logo && (
+                        <div className="flex-shrink-0 w-28 h-28 bg-background rounded-xl p-3 flex items-center justify-center border border-border shadow-sm">
+                          <img src={res.logo} alt={res.company} className="w-full h-full object-contain" />
+                        </div>
+                      )}
+                      <div className="flex-1">
+                        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
+                          <div>
+                            <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{res.role}</CardTitle>
+                            <CardDescription className="text-base font-medium mt-1">{res.company}</CardDescription>
+                          </div>
+                          <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{res.period}</Badge>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{res.location}</p>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2">
+                      {res.achievements.map((achievement, i) => (
+                        <li key={i} className="flex gap-2 text-muted-foreground">
+                          <span className="text-primary mt-1.5">•</span>
+                          <span>{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
           {/* Internships */}
           <div>
             <div className="flex items-center gap-2 mb-6">
@@ -231,11 +281,6 @@ const Experience = () => {
                 >
                   <CardHeader>
                     <div className="flex items-start gap-4">
-                      {intern.logo && (
-                        <div className="flex-shrink-0 w-28 h-28 bg-background rounded-xl p-3 flex items-center justify-center border border-border shadow-sm">
-                          <img src={intern.logo} alt={intern.company} className="w-full h-full object-contain" />
-                        </div>
-                      )}
                       <div className="flex-1">
                         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
                           <div>
