@@ -40,7 +40,7 @@ const experiences = [
   },
 ];
 
-const internships = [
+const researchExperience = [
   {
     company: "Vellore Institute of Technology",
     location: "Vellore, India",
@@ -51,6 +51,9 @@ const internships = [
       "Collaborated under the guidance of Professor R. Sujatha in the areas of Blockchain, Internet of Things, Deep Learning, Image Processing, and Healthcare Systems",
     ],
   },
+];
+
+const internships = [
   {
     company: "Ambher",
     location: "Bengaluru, Karnataka, India",
@@ -82,7 +85,7 @@ const internships = [
     role: "Research Intern",
     period: "November 2020 – December 2020",
     achievements: [
-      "Introduced to Interfacing Techniques with NI myRio on LabVIEW and Raspberry Pi",
+      "Worked on different Interfacing Techniques with NI myRio on LabVIEW and Raspberry Pi",
     ],
   },
   {
