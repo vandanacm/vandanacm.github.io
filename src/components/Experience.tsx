@@ -294,6 +294,11 @@ const Experience = () => {
                 >
                   <CardHeader>
                     <div className="flex items-start gap-4">
+                      {intern.logo && (
+                        <div className="flex-shrink-0 w-28 h-28 bg-background rounded-xl p-3 flex items-center justify-center border border-border shadow-sm">
+                          <img src={intern.logo} alt={intern.company} className="w-full h-full object-contain" />
+                        </div>
+                      )}
                       <div className="flex-1">
                         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
                           <div>
