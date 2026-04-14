@@ -59,7 +59,13 @@ const internships = [
     location: "Bengaluru, Karnataka, India",
     role: "Project Intern",
     period: "May 2021 – May 2022",
-    achievements: [],
+    achievements: [
+      "Supported business development and product management for a retail apparel and fashion brand",
+      "Engaged with fashion-industry clients to understand pain points, documented key industry gaps, and translated insights into product requirements",
+      "Collaborated with design and development teams to review and refine the e-commerce website's UI/UX and workflows",
+      "Contributed hands-on development work on the website and logistics platform",
+      "Helped set up and onboard the new development team for the company's online platform",
+    ],
   },
   {
     company: "50Hands Organization",
