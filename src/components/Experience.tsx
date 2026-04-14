@@ -5,6 +5,11 @@ import { useRef, useEffect, useState } from "react";
 import logoOptum from "@/assets/logo-optum.png";
 import logoUCDavis from "@/assets/logo-ucdavis-new.png";
 import logoVIT from "@/assets/logo-vit.png";
+import logoAmbher from "@/assets/ambher-logo.png";
+import logoSkykrafts from "@/assets/skykrafts-logo.png";
+import logo50Hands from "@/assets/50hands-logo.png";
+import logoSparks from "@/assets/sparks-foundation-logo.png";
+import logoBariflo from "@/assets/bariflo-logo.png";
 
 const experiences = [
   {
@@ -59,6 +64,7 @@ const internships = [
     location: "Bengaluru, Karnataka, India",
     role: "Project Intern",
     period: "May 2021 – May 2022",
+    logo: logoAmbher,
     achievements: [
       "Engaged with fashion-industry clients to identify pain points, documented key industry gaps, and translated insights into product requirements for the e-commerce website and logistics platform",
       "Collaborated with design and development teams to refine UI/UX and workflows, contributed hands-on development work, and helped onboard the new development team for the online platform",
@@ -69,6 +75,7 @@ const internships = [
     location: "Canada",
     role: "Technology Intern",
     period: "May 2020 – December 2020",
+    logo: logo50Hands,
     achievements: [
       "Information for Good | Innovation for Good | Humans for Good — 50 Hands intend to use open datasets for HOPE and HELP. A data-driven model to provide actionable insights addressing individual and community needs to overcome the situation",
     ],
@@ -78,6 +85,7 @@ const internships = [
     location: "Singapore",
     role: "Data Science Intern",
     period: "September 2020 – November 2020",
+    logo: logoSparks,
     achievements: [
       "Built and fine-tuned machine learning models using Python, working closely with teammates to boost their performance. Gathered big datasets for business needs, performed data analysis, and created visualization dashboards to showcase the results",
     ],
@@ -87,6 +95,7 @@ const internships = [
     location: "Hubli, Karnataka, India",
     role: "Research Intern",
     period: "November 2020 – December 2020",
+    logo: logoSkykrafts,
     achievements: [
       "Worked on different Interfacing Techniques with NI myRio on LabVIEW and Raspberry Pi",
     ],
@@ -96,6 +105,7 @@ const internships = [
     location: "Vellore, Tamil Nadu, India",
     role: "Technical Intern",
     period: "July 2019 – December 2019",
+    logo: logoBariflo,
     achievements: [
       "Implemented the knowledge of microcontrollers and IoT for measurement, testing, and development of a sensor module for the Control System of Aeration Bot",
     ],
@@ -284,6 +294,11 @@ const Experience = () => {
                 >
                   <CardHeader>
                     <div className="flex items-start gap-4">
+                      {intern.logo && (
+                        <div className="flex-shrink-0 w-28 h-28 bg-background rounded-xl p-3 flex items-center justify-center border border-border shadow-sm">
+                          <img src={intern.logo} alt={intern.company} className="w-full h-full object-contain" />
+                        </div>
+                      )}
                       <div className="flex-1">
                         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
                           <div>
