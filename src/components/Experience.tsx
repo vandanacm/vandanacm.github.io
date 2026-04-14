@@ -295,8 +295,12 @@ const Experience = () => {
                   <CardHeader>
                     <div className="flex items-start gap-4">
                       {intern.logo && (
-                        <div className="flex-shrink-0 w-28 h-28 bg-background rounded-xl p-3 flex items-center justify-center border border-border shadow-sm">
-                          <img src={intern.logo} alt={intern.company} className="w-full h-full object-contain" />
+                        <div className={`flex-shrink-0 w-28 h-28 rounded-xl flex items-center justify-center border border-border shadow-sm overflow-hidden ${
+                          intern.company === "Ambher" || intern.company === "50Hands Organization" ? "p-0" : "p-3 bg-background"
+                        }`}>
+                          <img src={intern.logo} alt={intern.company} className={`${
+                            intern.company === "Ambher" || intern.company === "50Hands Organization" ? "w-full h-full object-cover" : "w-full h-full object-contain"
+                          }`} />
                         </div>
                       )}
                       <div className="flex-1">
