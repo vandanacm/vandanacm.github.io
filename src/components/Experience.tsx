@@ -60,11 +60,8 @@ const internships = [
     role: "Project Intern",
     period: "May 2021 – May 2022",
     achievements: [
-      "Supported business development and product management for a retail apparel and fashion brand",
-      "Engaged with fashion-industry clients to understand pain points, documented key industry gaps, and translated insights into product requirements",
-      "Collaborated with design and development teams to review and refine the e-commerce website's UI/UX and workflows",
-      "Contributed hands-on development work on the website and logistics platform",
-      "Helped set up and onboard the new development team for the company's online platform",
+      "Engaged with fashion-industry clients to identify pain points, documented key industry gaps, and translated insights into product requirements for the e-commerce website and logistics platform",
+      "Collaborated with design and development teams to refine UI/UX and workflows, contributed hands-on development work, and helped onboard the new development team for the online platform",
     ],
   },
   {
