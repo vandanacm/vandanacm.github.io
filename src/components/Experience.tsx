@@ -258,7 +258,7 @@ const Experience = () => {
                             <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{res.role}</CardTitle>
                             <CardDescription className="text-base font-medium mt-1">{res.company}</CardDescription>
                           </div>
-                          <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{res.period}</Badge>
+                          {res.period && <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{res.period}</Badge>}
                         </div>
                         <p className="text-sm text-muted-foreground">{res.location}</p>
                       </div>
