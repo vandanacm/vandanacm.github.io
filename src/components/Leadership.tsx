@@ -25,6 +25,7 @@ import logoAsianJournal from "@/assets/logo-asian-journal.jpeg";
 import logoOptumGive from "@/assets/logo-optum-give.png";
 import logoCurtiss from "@/assets/logo-curtiss.jpeg";
 import logoVitSeal from "@/assets/logo-vit-seal.png";
+import logoSigmaXi from "@/assets/logo-sigma-xi.png";
 
 interface RoleItem {
   title: string;
@@ -45,14 +46,6 @@ const leadershipRoles: RoleItem[] = [
     description: "Organized Social Entrepreneurship Event at Riviera 2020 and facilitated educational outreach programs. 'Smile and Spread Smiles' captures my passion for making a positive contribution to society. My experience at 'Ayuda' has convinced me that even the smallest acts of kindness combined with individual efforts can significantly impact anyone in need.",
     logo: logoAyuda,
     url: "https://ayudango-2021.netlify.app/"
-  },
-  {
-    title: "Undergraduate Research Assistant",
-    organization: "SENSE School, VIT",
-    period: "2019-2022",
-    description: "Collaboration under the guidance of Professor R. Sujatha in the areas of Blockchain, Internet of Things, Deep Learning, Image processing, and Healthcare Systems",
-    logo: logoVitSeal,
-    fitContain: true
   },
   {
     title: "Founding Member & Head of Public Relations",
@@ -100,6 +93,14 @@ const leadershipRoles: RoleItem[] = [
 ];
 
 const volunteerActivities: RoleItem[] = [
+  {
+    title: "Full Member Nominee",
+    organization: "Sigma Xi, The Scientific Research Honor Society",
+    period: "April 2026 - Present",
+    description: "Nominated for Full Membership in Sigma Xi in recognition of scholarly achievements and contributions to the advancement of knowledge in the field of research.",
+    logo: logoSigmaXi,
+    fitContain: true
+  },
   {
     title: "Graduate Student Volunteer",
     organization: "UC Davis Health - Brains to Classrooms",
