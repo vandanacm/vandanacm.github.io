@@ -50,7 +50,7 @@ const researchExperience = [
     company: "Vellore Institute of Technology",
     location: "Vellore, India",
     role: "Undergraduate Research Assistant",
-    period: "May 2019 – April 2022",
+    period: "",
     logo: logoVIT,
     achievements: [
       "Collaborated under the guidance of Professor R. Sujatha in the areas of Blockchain, Internet of Things, Deep Learning, Image Processing, and Healthcare Systems",
@@ -258,7 +258,7 @@ const Experience = () => {
                             <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{res.role}</CardTitle>
                             <CardDescription className="text-base font-medium mt-1">{res.company}</CardDescription>
                           </div>
-                          <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{res.period}</Badge>
+                          {res.period && <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{res.period}</Badge>}
                         </div>
                         <p className="text-sm text-muted-foreground">{res.location}</p>
                       </div>
