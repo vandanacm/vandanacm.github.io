@@ -40,6 +40,14 @@ interface RoleItem {
 
 const leadershipRoles: RoleItem[] = [
   {
+    title: "Full Member Nominee",
+    organization: "Sigma Xi, The Scientific Research Honor Society",
+    period: "April 2026 - Present",
+    description: "Nominated for Full Membership in Sigma Xi in recognition of scholarly achievements and contributions to the advancement of knowledge in the field of research.",
+    logo: logoSigmaXi,
+    fitContain: true
+  },
+  {
     title: "Chairperson",
     organization: "Ayuda NGO, VIT",
     period: "2020-2021",
@@ -93,14 +101,6 @@ const leadershipRoles: RoleItem[] = [
 ];
 
 const volunteerActivities: RoleItem[] = [
-  {
-    title: "Full Member Nominee",
-    organization: "Sigma Xi, The Scientific Research Honor Society",
-    period: "April 2026 - Present",
-    description: "Nominated for Full Membership in Sigma Xi in recognition of scholarly achievements and contributions to the advancement of knowledge in the field of research.",
-    logo: logoSigmaXi,
-    fitContain: true
-  },
   {
     title: "Graduate Student Volunteer",
     organization: "UC Davis Health - Brains to Classrooms",
