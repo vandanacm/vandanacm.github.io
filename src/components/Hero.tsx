@@ -42,7 +42,7 @@ const Hero = () => {
               Building intelligent systems with AI and scalable cloud architecture
             </p>
             <p className="text-lg md:text-xl text-primary font-medium mb-2 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '2.4s', animationFillMode: 'forwards' }}>
-              Actively looking for Summer'26 Internships!
+              Actively looking for Fall'26 Co-op & 2027 New Grad Roles!
             </p>
             <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: '2.6s', animationFillMode: 'forwards' }}>
               Graduation Date: December 2026 (Expected) | Open to Relocation
