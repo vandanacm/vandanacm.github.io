@@ -12,8 +12,16 @@ import arteasyImg from "@/assets/project-arteasy.jpg";
 import intruderReidImg from "@/assets/project-intruder-reid.jpg";
 import resumeClassifierImg from "@/assets/project-resume-classifier.jpg";
 import hospitalSchedulingImg from "@/assets/project-hospital-scheduling.jpg";
+import cowmunityCareImg from "@/assets/project-cowmunitycare.jpg";
 
 const projects = [
+  {
+    title: "CowmunityCare",
+    description: "Voice-first intake platform for people new to Davis who need help finding care, housing, food, or everyday support. Users can speak, sign, or type in their own language, and CowmunityCare turns the conversation into a structured record with urgency flags, appointment details, and local resources they can actually reach.",
+    image: cowmunityCareImg,
+    tags: ["Voice AI", "Accessibility", "Healthcare", "Community"],
+    year: "2026"
+  },
   {
     title: "Arome – AI Fragrance Blueprint Engine",
     description: "Engineered Arome for L'Oréal Brandstorm 2026 — a full-stack AI chatbot that translates user memories into personalized luxury fragrance blueprints using a hybrid GraphRAG + LLM pipeline built on Neo4j, Weaviate, FastAPI, and Redis. Designed brand-agnostic architecture targeting the €7.5B exception fragrance market, with inline safety guardrails ensuring no medical or therapeutic claims reach consumer-facing output.",
@@ -37,14 +45,6 @@ const projects = [
     tags: ["DistilBERT", "NLP", "SVM", "XGBoost", "Python"],
     year: "2025",
     githubUrl: "https://github.com/vandanacm/resume-classifier"
-  },
-  {
-    title: "Hospital Patient Flow Optimization",
-    description: "Applied Flexible Job Shop Scheduling Problem (FJSP) framework with MILP optimization for hospital patient processing. Achieved 16.9% improvement over unscheduled operations and outperformed genetic algorithm approaches",
-    image: hospitalSchedulingImg,
-    tags: ["MILP", "Optimization", "Healthcare", "Python"],
-    year: "2025",
-    githubUrl: "https://github.com/vandanacm/fjsp-patient-processing"
   },
   {
     title: "Clinical Intelligent System",
@@ -75,13 +75,6 @@ const projects = [
     image: drowsinessImg,
     tags: ["CNN", "OpenCV", "Raspberry Pi", "TensorFlow"],
     year: "2021"
-  },
-  {
-    title: "ARTEASY - A Store With Purpose",
-    description: "Arteasy believes in handmade products supporting collaborative and sustainable design. Breaching the gap between online market and crafts of artisans from indigenous communities to help reach financial independence",
-    image: arteasyImg,
-    tags: ["E-commerce", "Social Impact", "Web Development"],
-    year: "2020"
   },
   {
     title: "Intruder ReID and Tracking",
