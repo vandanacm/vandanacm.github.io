@@ -16,6 +16,13 @@ import cowmunityCareImg from "@/assets/project-cowmunitycare.jpg";
 
 const projects = [
   {
+    title: "CowmunityCare",
+    description: "Voice-first intake platform for people new to Davis who need help finding care, housing, food, or everyday support. Users can speak, sign, or type in their own language, and CowmunityCare turns the conversation into a structured record with urgency flags, appointment details, and local resources they can actually reach.",
+    image: cowmunityCareImg,
+    tags: ["Voice AI", "Accessibility", "Healthcare", "Community"],
+    year: "2026"
+  },
+  {
     title: "Arome – AI Fragrance Blueprint Engine",
     description: "Engineered Arome for L'Oréal Brandstorm 2026 — a full-stack AI chatbot that translates user memories into personalized luxury fragrance blueprints using a hybrid GraphRAG + LLM pipeline built on Neo4j, Weaviate, FastAPI, and Redis. Designed brand-agnostic architecture targeting the €7.5B exception fragrance market, with inline safety guardrails ensuring no medical or therapeutic claims reach consumer-facing output.",
     image: aromeImg,
