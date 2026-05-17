@@ -47,14 +47,6 @@ const projects = [
     githubUrl: "https://github.com/vandanacm/resume-classifier"
   },
   {
-    title: "Hospital Patient Flow Optimization",
-    description: "Applied Flexible Job Shop Scheduling Problem (FJSP) framework with MILP optimization for hospital patient processing. Achieved 16.9% improvement over unscheduled operations and outperformed genetic algorithm approaches",
-    image: hospitalSchedulingImg,
-    tags: ["MILP", "Optimization", "Healthcare", "Python"],
-    year: "2025",
-    githubUrl: "https://github.com/vandanacm/fjsp-patient-processing"
-  },
-  {
     title: "Clinical Intelligent System",
     description: "RAG-based clinical Q&A system using OpenAI GPT-4o mini with ChromaDB vector database for semantic search, delivering factually accurate medical responses",
     image: clinicalAiImg,
