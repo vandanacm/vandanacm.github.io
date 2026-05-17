@@ -77,13 +77,6 @@ const projects = [
     year: "2021"
   },
   {
-    title: "ARTEASY - A Store With Purpose",
-    description: "Arteasy believes in handmade products supporting collaborative and sustainable design. Breaching the gap between online market and crafts of artisans from indigenous communities to help reach financial independence",
-    image: arteasyImg,
-    tags: ["E-commerce", "Social Impact", "Web Development"],
-    year: "2020"
-  },
-  {
     title: "Intruder ReID and Tracking",
     description: "Re-identifying persons and plotting detection locations for surveillance application using Market1501 and COCO datasets. Implemented with ResNet50 and YOLOv3 algorithms",
     image: intruderReidImg,
