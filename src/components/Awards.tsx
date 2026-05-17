@@ -54,7 +54,7 @@ const awards = [
   },
   {
     icon: Award,
-    title: "Best Paper Award",
+    title: "Springer Best Paper Award",
     organization: "Indiana-Purdue University",
     description: "Outstanding research presentation at Indianapolis, USA",
     period: "October 2019",
