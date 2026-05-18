@@ -13,6 +13,7 @@ import intruderReidImg from "@/assets/project-intruder-reid.jpg";
 import resumeClassifierImg from "@/assets/project-resume-classifier.jpg";
 import hospitalSchedulingImg from "@/assets/project-hospital-scheduling.jpg";
 import cowmunityCareImg from "@/assets/project-cowmunitycare.jpg";
+import clarifiImg from "@/assets/project-clarifi.jpg";
 
 const projects = [
   {
