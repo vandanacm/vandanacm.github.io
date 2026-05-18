@@ -13,6 +13,7 @@ import intruderReidImg from "@/assets/project-intruder-reid.jpg";
 import resumeClassifierImg from "@/assets/project-resume-classifier.jpg";
 import hospitalSchedulingImg from "@/assets/project-hospital-scheduling.jpg";
 import cowmunityCareImg from "@/assets/project-cowmunitycare.jpg";
+import clarifiImg from "@/assets/project-clarifi.jpg";
 
 const projects = [
   {
@@ -22,6 +23,13 @@ const projects = [
     tags: ["Voice AI", "Accessibility", "Healthcare", "Community"],
     year: "2026",
     demoUrl: "https://www.youtube.com/watch?v=lDt9Liq3pP4",
+  },
+  {
+    title: "ClariFi",
+    description: "Built ClariFi, a full-stack personal finance analytics dashboard (React, TypeScript, D3, FastAPI, MongoDB) integrating BLS spending benchmarks, HMDA mortgage data, and a calibrated XGBoost + SHAP readiness model — exposing approval-risk drivers, scenario simulation, and AI-guided insights through interactive visual analytics.",
+    image: clarifiImg,
+    tags: ["React", "TypeScript", "D3", "FastAPI", "MongoDB", "XGBoost", "SHAP"],
+    year: "2026",
   },
   {
     title: "Arome – AI Fragrance Blueprint Engine",
