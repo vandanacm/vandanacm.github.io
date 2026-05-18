@@ -31,6 +31,7 @@ const projects = [
     image: clarifiImg,
     tags: ["React", "TypeScript", "D3", "FastAPI", "MongoDB", "XGBoost", "SHAP"],
     year: "2026",
+    githubUrl: "https://github.com/vandanacm/ClariFi",
   },
   {
     title: "Arome – AI Fragrance Blueprint Engine",
