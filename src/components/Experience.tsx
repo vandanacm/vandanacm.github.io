@@ -221,7 +221,7 @@ const Experience = () => {
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, i) => (
                         <li key={i} className="flex gap-2 text-muted-foreground">
-                          <span className="text-primary mt-1.5">--�</span>
+                          <span className="text-primary mt-1.5">•</span>
                           <span>{achievement}</span>
                         </li>
                       ))}
@@ -268,7 +268,7 @@ const Experience = () => {
                     <ul className="space-y-2">
                       {res.achievements.map((achievement, i) => (
                         <li key={i} className="flex gap-2 text-muted-foreground">
-                          <span className="text-primary mt-1.5">--�</span>
+                          <span className="text-primary mt-1.5">•</span>
                           <span>{achievement}</span>
                         </li>
                       ))}
@@ -323,7 +323,7 @@ const Experience = () => {
                         <ul className="space-y-1">
                           {edu.coursework.map((course, i) => (
                             <li key={i} className="flex gap-2 text-sm text-muted-foreground">
-                              <span className="text-primary">--�</span>
+                              <span className="text-primary">•</span>
                               <span>{course}</span>
                             </li>
                           ))}
