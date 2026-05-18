@@ -27,15 +27,15 @@ const projects = [
   },
   {
     title: "ClariFi",
-    description: "Built ClariFi, a full-stack personal finance analytics dashboard (React, TypeScript, D3, FastAPI, MongoDB) integrating BLS spending benchmarks, HMDA mortgage data, and a calibrated XGBoost + SHAP readiness model --- exposing approval-risk drivers, scenario simulation, and AI-guided insights through interactive visual analytics.",
+    description: "Built ClariFi, a full-stack personal finance analytics dashboard (React, TypeScript, D3, FastAPI, MongoDB) integrating BLS spending benchmarks, HMDA mortgage data, and a calibrated XGBoost + SHAP readiness model - exposing approval-risk drivers, scenario simulation, and AI-guided insights through interactive visual analytics.",
     image: clarifiImg,
     tags: ["React", "TypeScript", "D3", "FastAPI", "MongoDB", "XGBoost", "SHAP"],
     year: "2026",
     githubUrl: "https://github.com/vandanacm/ClariFi",
   },
   {
-    title: "Arome --- AI Fragrance Blueprint Engine",
-    description: "Engineered Arome for L'Or√©al Brandstorm 2026 --- a full-stack AI chatbot that translates user memories into personalized luxury fragrance blueprints using a hybrid GraphRAG + LLM pipeline built on Neo4j, Weaviate, FastAPI, and Redis. Designed brand-agnostic architecture targeting the -Ç¨7.5B exception fragrance market, with inline safety guardrails ensuring no medical or therapeutic claims reach consumer-facing output.",
+    title: "Arome - AI Fragrance Blueprint Engine",
+    description: "Engineered Arome for L'Or√©al Brandstorm 2026 - a full-stack AI chatbot that translates user memories into personalized luxury fragrance blueprints using a hybrid GraphRAG + LLM pipeline built on Neo4j, Weaviate, FastAPI, and Redis. Designed brand-agnostic architecture targeting the ‚Ç¨7.5B exception fragrance market, with inline safety guardrails ensuring no medical or therapeutic claims reach consumer-facing output.",
     image: aromeImg,
     tags: ["GraphRAG", "Neo4j", "Weaviate", "FastAPI", "Redis", "LLM"],
     year: "2026",
