@@ -23,6 +23,7 @@ const projects = [
     tags: ["Voice AI", "Accessibility", "Healthcare", "Community"],
     year: "2026",
     demoUrl: "https://www.youtube.com/watch?v=lDt9Liq3pP4",
+    githubUrl: "https://github.com/vandanacm/HackDavis-26-CowmunityCare",
   },
   {
     title: "ClariFi",
