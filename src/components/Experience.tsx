@@ -17,7 +17,7 @@ const experiences = [
     company: "Optum, UnitedHealth Group",
     location: "Hyderabad, India",
     role: "Full Stack Engineer",
-    period: "September 2024 --- September 2025",
+    period: "September 2024 - September 2025",
     logo: logoOptum,
     achievements: [
       "Built and deployed a clinical question-answering assistant using a RAG architecture (OpenAI GPT-4o mini, ChromaDB, OpenAI textembedding-3-small), implementing backend retrieval workflows integrated with LLM prompts to deliver accurate, context-aware medical query responses",
@@ -32,7 +32,7 @@ const experiences = [
     company: "Optum, UnitedHealth Group",
     location: "Hyderabad, India",
     role: "Software Engineer",
-    period: "June 2022 --- September 2024",
+    period: "June 2022 - September 2024",
     logo: logoOptum,
     achievements: [
       "Delivered secure REST APIs in Java and Springboot with HIPAA compliance, boosting API performance by cutting database call latency by 20% for clinical workflows",
@@ -63,7 +63,7 @@ const internships = [
     company: "Ambher",
     location: "Bengaluru, Karnataka, India",
     role: "Project Intern",
-    period: "May 2021 --- May 2022",
+    period: "May 2021 - May 2022",
     logo: logoAmbher,
     achievements: [
       "Engaged with fashion-industry clients to identify pain points, documented key industry gaps, and translated insights into product requirements for the e-commerce website and logistics platform",
@@ -74,17 +74,17 @@ const internships = [
     company: "50Hands Organization",
     location: "Canada",
     role: "Technology Intern",
-    period: "May 2020 --- December 2020",
+    period: "May 2020 - December 2020",
     logo: logo50Hands,
     achievements: [
-      "Information for Good | Innovation for Good | Humans for Good --- 50 Hands intend to use open datasets for HOPE and HELP. A data-driven model to provide actionable insights addressing individual and community needs to overcome the situation",
+      "Information for Good | Innovation for Good | Humans for Good - 50 Hands intend to use open datasets for HOPE and HELP. A data-driven model to provide actionable insights addressing individual and community needs to overcome the situation",
     ],
   },
   {
     company: "The Sparks Foundation",
     location: "Singapore",
     role: "Data Science Intern",
-    period: "September 2020 --- November 2020",
+    period: "September 2020 - November 2020",
     logo: logoSparks,
     achievements: [
       "Built and fine-tuned machine learning models using Python, working closely with teammates to boost their performance. Gathered big datasets for business needs, performed data analysis, and created visualization dashboards to showcase the results",
@@ -94,7 +94,7 @@ const internships = [
     company: "Skykrafts Aerospace",
     location: "Hubli, Karnataka, India",
     role: "Research Intern",
-    period: "November 2020 --- December 2020",
+    period: "November 2020 - December 2020",
     logo: logoSkykrafts,
     achievements: [
       "Worked on different Interfacing Techniques with NI myRio on LabVIEW and Raspberry Pi",
@@ -104,7 +104,7 @@ const internships = [
     company: "Bariflo Labs",
     location: "Vellore, Tamil Nadu, India",
     role: "Technical Intern",
-    period: "July 2019 --- December 2019",
+    period: "July 2019 - December 2019",
     logo: logoBariflo,
     achievements: [
       "Implemented the knowledge of microcontrollers and IoT for measurement, testing, and development of a sensor module for the Control System of Aeration Bot",
@@ -221,7 +221,7 @@ const Experience = () => {
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, i) => (
                         <li key={i} className="flex gap-2 text-muted-foreground">
-                          <span className="text-primary mt-1.5">--¢</span>
+                          <span className="text-primary mt-1.5">â€¢</span>
                           <span>{achievement}</span>
                         </li>
                       ))}
@@ -268,7 +268,7 @@ const Experience = () => {
                     <ul className="space-y-2">
                       {res.achievements.map((achievement, i) => (
                         <li key={i} className="flex gap-2 text-muted-foreground">
-                          <span className="text-primary mt-1.5">--¢</span>
+                          <span className="text-primary mt-1.5">â€¢</span>
                           <span>{achievement}</span>
                         </li>
                       ))}
@@ -323,7 +323,7 @@ const Experience = () => {
                         <ul className="space-y-1">
                           {edu.coursework.map((course, i) => (
                             <li key={i} className="flex gap-2 text-sm text-muted-foreground">
-                              <span className="text-primary">--¢</span>
+                              <span className="text-primary">â€¢</span>
                               <span>{course}</span>
                             </li>
                           ))}
