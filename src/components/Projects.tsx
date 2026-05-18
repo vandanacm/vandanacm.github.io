@@ -20,7 +20,8 @@ const projects = [
     description: "Voice-first intake platform for people new to Davis who need help finding care, housing, food, or everyday support. Users can speak, sign, or type in their own language, and CowmunityCare turns the conversation into a structured record with urgency flags, appointment details, and local resources they can actually reach.",
     image: cowmunityCareImg,
     tags: ["Voice AI", "Accessibility", "Healthcare", "Community"],
-    year: "2026"
+    year: "2026",
+    demoUrl: "https://www.youtube.com/watch?v=lDt9Liq3pP4",
   },
   {
     title: "Arome – AI Fragrance Blueprint Engine",
