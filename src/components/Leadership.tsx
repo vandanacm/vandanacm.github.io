@@ -124,10 +124,10 @@ const volunteerActivities: RoleItem[] = [
     logo: logoCoffee
   },
   {
-    title: "Graduate Student Member",
+    title: "Graduate Student Member | Awarded Best Mentor 2025-26",
     organization: "IEEE, UC Davis",
     period: "2025-2027",
-    description: "Active member contributing to science and technology initiatives. Mentoring undergraduate students in their assignments, projects and workshops",
+    description: "Active member contributing to science and technology initiatives. Awarded Best Mentor for mentoring undergraduate students in their assignments, projects and workshops",
     logo: logoIeeeUcdavis
   },
   {
