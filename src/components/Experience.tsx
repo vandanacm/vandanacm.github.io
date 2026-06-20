@@ -10,6 +10,7 @@ import logoSkykrafts from "@/assets/skykrafts-logo.png";
 import logo50Hands from "@/assets/50hands-logo.png";
 import logoSparks from "@/assets/sparks-foundation-logo.png";
 import logoBariflo from "@/assets/bariflo-logo.png";
+import logoAseec from "@/assets/logo-aseec.png";
 
 const experiences = [
   {
