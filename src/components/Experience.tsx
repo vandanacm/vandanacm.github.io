@@ -268,7 +268,13 @@ const Experience = () => {
                         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
                           <div>
                             <CardTitle className="font-sans text-card-foreground group-hover:text-primary transition-colors duration-300">{res.role}</CardTitle>
-                            <CardDescription className="text-base font-medium mt-1">{res.company}</CardDescription>
+                            <CardDescription className="text-base font-medium mt-1">
+                              {res.url ? (
+                                <a href={res.url} target="_blank" rel="noopener noreferrer" className="no-underline hover:text-primary transition-colors">
+                                  {res.company}
+                                </a>
+                              ) : res.company}
+                            </CardDescription>
                           </div>
                           {res.period && <Badge variant="secondary" className="w-fit bg-primary/10 text-primary border-primary/20">{res.period}</Badge>}
                         </div>
