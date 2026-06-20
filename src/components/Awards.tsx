@@ -4,6 +4,13 @@ import { useRef, useEffect, useState } from "react";
 
 const awards = [
   {
+    icon: Award,
+    title: "Best Mentor Award",
+    organization: "IEEE, UC Davis",
+    description: "Awarded Best Mentor for mentoring undergraduate students in their assignments, projects and workshops",
+    period: "May 2026",
+  },
+  {
     icon: Trophy,
     title: "Top 10 Finale Innovators",
     organization: "Optum, UnitedHealth Group",
