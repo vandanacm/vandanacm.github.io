@@ -53,6 +53,7 @@ const researchExperience = [
     role: "Graduate Student Researcher",
     period: "",
     logo: logoAseec,
+    url: "https://www.ece.ucdavis.edu/~hhomayou/goal/",
     achievements: [
       "Built AEGIS, an agentic GraphRAG framework for hardware vulnerability detection across 9 OpenTitan IPs, achieving 0.88 single-run detection probability via a dual-layer knowledge graph and Synopsys VCS pipeline; demonstrated RAG outperforms frontier long-context models at 135x lower cost across 13 confirmed vulnerabilities",
     ],
