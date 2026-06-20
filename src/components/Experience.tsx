@@ -48,6 +48,16 @@ const experiences = [
 
 const researchExperience = [
   {
+    company: "Accelerated, Secure, and Energy-Efficient Computing Lab (ASEEC)",
+    location: "University of California, Davis, California",
+    role: "Graduate Student Researcher",
+    period: "",
+    logo: logoAseec,
+    achievements: [
+      "Built AEGIS, an agentic GraphRAG framework for hardware vulnerability detection across 9 OpenTitan IPs, achieving 0.88 single-run detection probability via a dual-layer knowledge graph and Synopsys VCS pipeline; demonstrated RAG outperforms frontier long-context models at 135x lower cost across 13 confirmed vulnerabilities",
+    ],
+  },
+  {
     company: "Vellore Institute of Technology",
     location: "Vellore, India",
     role: "Undergraduate Research Assistant",
