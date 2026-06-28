@@ -11,8 +11,21 @@ import logo50Hands from "@/assets/50hands-logo.png";
 import logoSparks from "@/assets/sparks-foundation-logo.png";
 import logoBariflo from "@/assets/bariflo-logo.png";
 import logoAseec from "@/assets/logo-aseec.png";
+import logoHpe from "@/assets/logo-hpe.png";
 
 const experiences = [
+  {
+    type: "work",
+    company: "Hewlett Packard Enterprise",
+    location: "Sunnyvale, California",
+    role: "Data Science Intern",
+    period: "June 2026 - Present",
+    logo: logoHpe,
+    achievements: [
+      "Designing NetEndure, a configuration-aware agent that maps L2/L3 topology, classifies active protocols, and generates longevity test scenarios from real network configs",
+      "Building trigger bucketization, seeded randomization, and post-trigger validation logic to test protocol health, traffic stability, and system resilience over long-duration runs",
+    ],
+  },
   {
     type: "work",
     company: "Optum, UnitedHealth Group",
